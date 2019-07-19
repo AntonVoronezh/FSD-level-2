@@ -1,39 +1,44 @@
 // variables
-$dark-shade-100: #1F2041;
+$dark-shade-100: #1f2041;
 $dark-shade-75: rgba(31, 32, 65, 0.75);
-$dark-shade-50: rgba(31, 32, 65, 0.50);
+$dark-shade-50: rgba(31, 32, 65, 0.5);
 $dark-shade-25: rgba(31, 32, 65, 0.25);
 $dark-shade-5: rgba(31, 32, 65, 0.05);
-$purple: #BC9CFF;
-$green: #6FCF97;
-
+$purple: #bc9cff;
+$green: #6fcf97;
 
 // size
-$default:1800px;
-$desktop:1200px;
-$tablets:768px;
-$phones:480px;
+$default: 1920px;
+$desktop: 1200px;
+$tablets: 768px;
+$phones: 480px;
+$phones-sm: 320px;
 
 @mixin default {
-    @media (max-width: $default) {
-        @content;
-    }
+	@media (max-width: $default) {
+		@content;
+	}
 }
 
 @mixin desktop {
-    @media (max-width: $desktop) {
-        @content;
-    }
+	@media (max-width: $desktop) {
+		@content;
+	}
 }
 
 @mixin tablets {
-    @media (max-width: $tablets) {
-        @content;
-    }
+	@media (max-width: $tablets) {
+		@content;
+	}
 }
 
 @mixin phones {
-    @media (max-width: $phones) {
-        @content;
-    }
+	@media (max-width: $phones) {
+		@content;
+	}
+}
+@mixin phones-sm {
+	@media (max-width: $phones-sm) {
+		@content;
+	}
 }
