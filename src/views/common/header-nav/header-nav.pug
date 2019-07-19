@@ -1,0 +1,8 @@
+nav.top-nav
+  .top-nav__wrap 
+    -
+    var titles = ['Home','About Us','Services','Careers','News','Documentation',]
+    ul.top-nav__list
+      each title in titles
+        li.top-nav__item
+          a(href=`#id${i}`).top-nav__link #{title}
