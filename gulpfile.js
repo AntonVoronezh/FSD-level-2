@@ -17,6 +17,7 @@ const ghPages = require('gulp-gh-pages');
 gulp.task("styles", () => {
   return gulp
     .src(`${config.SRC_DIR}/styles/main.scss`)
+    // .src(`${config.SRC_DIR}/styles/main.scss`)
     .pipe($gp.sourcemaps.init())
     .pipe($gp.plumber())
     .pipe($gp.postcss(require("./postcss.config")))
@@ -127,6 +128,7 @@ gulp.task("images", () => {
 
 // галповский вотчер
 gulp.task("watch", () => {
+  gulp.watch(`${config.VIEWS_DIR}/common/**/*.scss`, gulp.series("styles"));
   gulp.watch(`${config.SRC_DIR}/styles/**/*.scss`, gulp.series("styles"));
   gulp.watch(`${config.SRC_DIR}/images/**/*.*`, gulp.series("images"));
   gulp.watch(`${config.SRC_DIR}/scripts/**/*.js`, gulp.series("scripts"));
