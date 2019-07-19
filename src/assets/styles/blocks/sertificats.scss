@@ -1,0 +1,30 @@
+.sertificats {
+    border: 1px solid #999;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.sertificats__img {
+    width: 100%;
+    max-width: 200px;
+    height: 100%;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border: 1px solid #ccc;
+    @include phones {
+        max-width: 150px;
+    }
+}
+
+.sertificats__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+}
+
+.sertificats__link {
+    margin-top: 10px;
+}

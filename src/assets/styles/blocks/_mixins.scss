@@ -1,0 +1,29 @@
+// size
+$default:1800px;
+$desktop:1200px;
+$tablets:768px;
+$phones:480px;
+
+@mixin default {
+    @media (max-width: $default) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (max-width: $desktop) {
+        @content;
+    }
+}
+
+@mixin tablets {
+    @media (max-width: $tablets) {
+        @content;
+    }
+}
+
+@mixin phones {
+    @media (max-width: $phones) {
+        @content;
+    }
+}

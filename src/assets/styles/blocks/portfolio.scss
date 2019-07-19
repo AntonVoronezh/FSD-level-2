@@ -1,0 +1,252 @@
+.portfolio {
+    padding: 10px;
+    border: 1px solid #999;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.portfolio__img {
+    margin-top: 60px;
+    width: 100%;
+    @include tablets {
+        margin-top: 70px;
+    }
+    @include phones {
+        margin-top: 50px;
+    } // border: 1px solid #000000;
+}
+
+.portfolio__block {
+    position: relative;
+}
+
+.portfolio__block-title {
+    margin-top: 25px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #1aa5e0;
+    font-size: 22px;
+}
+
+.portfolio__block-link-git {
+    color: #000;
+    position: absolute;
+    font-size: 16px;
+    left: 50%;
+    transform: translate(-50%);
+    top: 10px;
+    text-decoration: none; // color: #000;
+    transition: color 0.5s;
+    &:hover {
+        color: #1aa5e0;
+    }
+    &--front {
+        @include tablets {
+            top: 300px;
+        }
+        @include phones {
+            top: 10px;
+        }
+    }
+    &--back {
+        @include phones {
+            display: none;
+        }
+    }
+}
+
+.portfolio__block-link {
+    position: absolute;
+    font-size: 16px;
+}
+
+.portfolio__block-link--front {
+    left: 10px;
+    top: 10px;
+    @include phones {
+        top: 240px;
+    }
+}
+
+.portfolio__block-link--back {
+    left: 10px;
+    top: 10px;
+}
+
+.portfolio__block-more {
+    position: absolute;
+    font-size: 16px;
+}
+
+.portfolio__block-more--front {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    @include phones {
+        top: 240px;
+    }
+}
+
+.portfolio__block-more--back {
+    font-size: 16px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.portfolio__block-link {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.5s;
+    &:hover {
+        color: #1aa5e0;
+    }
+}
+
+.portfolio__block-more,
+.portfolio__block-index {
+    color: #000;
+    background-color: #fff;
+    transition: color 0.5s;
+    &:hover {
+        color: #1aa5e0;
+    }
+}
+
+.portfolio__text {
+    border: 1px solid #999;
+    height: calc(100% - 40px);
+    margin-top: 40px;
+    display: flex;
+    &--first {
+        flex-direction: column;
+    }
+}
+
+.portfolio__title {
+    font-size: 22px;
+    text-align: center;
+    @include tablets {
+        font-size: 18px;
+    }
+    @include phones {
+        font-size: 16px;
+    }
+    &--first {
+        margin-top: 10px;
+    }
+}
+
+.portfolio__block-pic {
+    display: flex;
+    max-width: 50%;
+}
+
+.portfolio__block-img {
+    max-width: 150px;
+    max-height: 400px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.portfolio__block-img-first {
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 250px;
+    @include tablets {
+        height: 150px;
+    }
+    @include phones {
+        height: 100px;
+    }
+}
+
+.portfolio__block-img--phones {
+    @include tablets {
+        display: none;
+    }
+}
+
+.portfolio__block-img--tablet {
+    @include phones {
+        display: none;
+    }
+}
+
+.portfolio__text-wrap {
+    padding-left: 5px;
+}
+
+.portfolio__text-text {
+    margin-top: 5px;
+    @include tablets {
+        font-size: 14px;
+    }
+    @include phones {
+        font-size: 12px;
+    }
+}
+
+.portfolio__paragraph {
+    text-align: left;
+    font-size: 16px;
+    color: #000;
+    &--strong {
+        font-weight: 500;
+    }
+    &::before {
+        content: "* ";
+    }
+}
+
+.other {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.other__wrap {
+    border: 1px solid #999;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.other__top {}
+
+.other__middle {}
+
+.other__bottom {
+    justify-content: flex-end;
+}
+
+.other__img {
+    max-height: 285px;
+    max-width: 200px;
+    @include phones {
+        width: 120px;
+    }
+}
+
+.other__link {
+    color: #000;
+    font-size: 16px;
+    left: 50%;
+    transform: translate(-50%);
+    text-decoration: none;
+    transition: color 0.5s;
+    &:hover {
+        color: #1aa5e0;
+    }
+    @include phones {
+        font-size: 13px;
+    }
+}
+
+.other__title {
+    color: #000;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
