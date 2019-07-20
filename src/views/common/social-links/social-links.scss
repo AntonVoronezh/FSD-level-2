@@ -8,37 +8,38 @@
 	&__item {
 		width: 24px;
 		height: 24px;
-		border: 1px solid #000000;
-		// margin-right: 20px;
+		font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+		font-weight: 900;
+		font-size: 24px;
+		display: block;
+		text-transform: uppercase;
+		background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 
 		&--twitter {
 			&::after {
-				display: block;
 				content: '\f099';
-				font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
-				font-weight: 900;
-				font-size: 24px;
 			}
+
 		}
 
 		&--facebook {
 			&::after {
-				display: block;
 				content: '\f082';
-				font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
-				font-weight: 900;
-				font-size: 24px;
 			}
 		}
 
 		&--instagram {
 			&::after {
-				display: block;
 				content: '\f16d';
-				font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
-				font-weight: 900;
-				font-size: 24px;
 			}
+		}
+
+		&:hover {
+			opacity: 0.5;
+			cursor: pointer;
+			transition: opacity 0.5s;
 		}
 	}
 }
