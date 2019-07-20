@@ -1,8 +1,30 @@
 nav.top-nav
   .top-nav__wrap 
-    -
-    var titles = ['Home','About Us','Services','Careers','News','Documentation',]
-    ul.top-nav__list
-      each title in titles
-        li.top-nav__item
-          a(href=`#id${i}`).top-nav__link #{title}
+   
+    - var titles = ['Home','About Us','Services','Careers','News','Documentation'];
+        ul.top-nav__list
+          each title, i in titles
+            li.top-nav__item
+              if i===0
+                a(href=`${title}`).top-nav__link.top-nav__link--active #{title}
+                //- |j000
+              else if i===2
+                .top-nav__select
+                  select.top-nav__dropdown
+                    option.top-nav__option #{title} 
+                    option #{title} 2
+                    option #{title} 3
+                    //- .top-nav__select-img
+                    //- a(href=`${title}`).top-nav__link #{title}
+                //- <i class="material-icons">expand_more</i>
+              else 
+                  a(href=`${title.toLowerCase().replace(" ", "-")}.html`).top-nav__link #{title}
+
+//- .select
+//-   select.dropdown.selection(name='you_are')
+//-     option(value='0', disabled='', selected='') Select
+//-     option(value='1') Student
+//-     option(value='2') Full-time Job
+//-     option(value='2') Part-time Job
+//-     option(value='3') Job-Seeker
+//-     option(value='4') Nothing Yet

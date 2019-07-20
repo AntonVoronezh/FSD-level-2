@@ -1,3 +1,5 @@
+// @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 @font-face {
   font-family: 'Montserrat-Regular';
   src: url('./assets/fonts/Montserrat-Regular.woff') format('woff');
@@ -18,4 +20,13 @@
   font-weight: bold;
   font-style: normal;
   font-display: block;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url('./assets/fonts/MaterialIcons-Regular.woff') format('woff');
 }
