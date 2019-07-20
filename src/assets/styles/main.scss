@@ -1,8 +1,10 @@
 @import 'normalize.css';
 @import './blocks/_mixins.scss';
 @import './layout/fonts.scss';
+@import './blocks/_all.min';
 @import './layout/base.scss';
 // @import './blocks/*.scss';
+
 
 @import '../../views/common/header/header.scss';
 @import '../../views/common/maincontent/maincontent.scss';
