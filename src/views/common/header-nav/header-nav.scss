@@ -14,6 +14,12 @@
 		align-items: center;
 		justify-content: center;
 		position: relative;
+
+		&--last {
+			padding-left: 20px;
+			color: $dark-shade-50;
+			border-left: 1px solid $dark-shade-10;
+		}
 	}
 
 	&__link {
@@ -46,6 +52,7 @@
 			// left: 60px;
 			font-family: 'Material Icons';
 			font-size: 24px;
+			color: $dark-shade-50;
 		}
 	}
 	&__dropdown {

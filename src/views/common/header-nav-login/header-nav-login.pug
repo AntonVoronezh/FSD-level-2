@@ -7,13 +7,15 @@ nav.top-nav
             li.top-nav__item
               if i===0
                 a(href=`${title}`).top-nav__link.top-nav__link--active #{title}
-                //- |j000
               else if i===2
                 .top-nav__select
                   select.top-nav__dropdown
                     option.top-nav__option #{title} 
                     option #{title} 2
                     option #{title} 3
+              else if i===titles.length - 1
+                .top-nav__item--last
+                  | #{title}
               else 
                   a(href=`${title.toLowerCase().replace(" ", "-")}.html`).top-nav__link #{title}
 
