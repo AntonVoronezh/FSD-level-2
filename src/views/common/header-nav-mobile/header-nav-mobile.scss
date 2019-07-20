@@ -1,0 +1,35 @@
+.top-nav-mobile {
+	&__wrap {
+	}
+
+	&__open {
+		width: 24px;
+		height: 24px;
+		font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+		font-weight: 900;
+		font-size: 24px;
+		display: block;
+		text-transform: uppercase;
+		background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+
+		&::after {
+			content: '\f0c9';
+		}
+
+		&:hover {
+			opacity: 0.5;
+			cursor: pointer;
+			transition: opacity 0.5s;
+		}
+	}
+
+	@include desktop {
+		display: none;
+	}
+
+	@include tablets {
+		display: block;
+	}
+}

@@ -8,14 +8,32 @@
 		flex-grow: 1;
 		justify-content: space-between;
 		align-items: center;
-		border: 1px solid #000000;
+
+		@include tablets {
+			flex-direction: column;
+		}
 	}
 
 	&__left {
 		margin-left: 10%;
+		text-align: center;
+
+		@include tablets {
+			margin-bottom: 10px;
+			margin-top: 10px;
+			margin-right: auto;
+			margin-left: auto;
+		}
 	}
 
 	&__right {
 		margin-right: 10%;
+
+		@include tablets {
+			order: -1;
+			margin-top: 20px;
+			margin-right: auto;
+			margin-left: auto;
+		}
 	}
 }

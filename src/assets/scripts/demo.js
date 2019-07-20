@@ -6,4 +6,5 @@ import '../../views/common/maincontent/maincontent';
 import '../../views/common/logo/logo';
 import '../../views/common/header-nav/header-nav';
 import '../../views/common/btn/btn';
+import '../../views/common/header-nav-mobile/header-nav-mobile';
 console.log('demo.js loaded');
