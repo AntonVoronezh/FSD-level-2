@@ -19,12 +19,10 @@ nav.top-nav
                 //- <i class="material-icons">expand_more</i>
               else 
                   a(href=`${title.toLowerCase().replace(" ", "-")}.html`).top-nav__link #{title}
+          li.top-nav__item
+            button.btn.btn--white
+              |Login
+          li.top-nav__item
+            button.btn.btn--purple
+              |Register
 
-//- .select
-//-   select.dropdown.selection(name='you_are')
-//-     option(value='0', disabled='', selected='') Select
-//-     option(value='1') Student
-//-     option(value='2') Full-time Job
-//-     option(value='2') Part-time Job
-//-     option(value='3') Job-Seeker
-//-     option(value='4') Nothing Yet
