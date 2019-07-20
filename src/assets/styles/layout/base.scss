@@ -18,16 +18,19 @@ body {
 	position: relative;
 	display: flex;
 	flex-direction: column;
+	max-width: 1920px;
+	min-width: 320px;
 }
 
 .container {
 	flex-grow: 1;
 	display: flex;
 	margin: 0 auto;
-	width: 90%;
+	width: 80.5%;
 	height: 100%;
-	max-width: 1200px;
-	// border: 1px solid #000000;
+	// max-width: 1920px;
+	// min-width: 320px;
+	// 1120
 
 	@include tablets {
 		flex-direction: column;

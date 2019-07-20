@@ -15,7 +15,6 @@
 	}
 
 	&__left {
-		margin-left: 10%;
 		text-align: center;
 
 		@include tablets {
@@ -27,8 +26,6 @@
 	}
 
 	&__right {
-		margin-right: 10%;
-
 		@include tablets {
 			order: -1;
 			margin-top: 20px;

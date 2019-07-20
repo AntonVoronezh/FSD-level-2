@@ -13,6 +13,7 @@
 		background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
+		transition: opacity 0.5s;
 
 		&::after {
 			content: '\f0c9';
@@ -21,13 +22,12 @@
 		&:hover {
 			opacity: 0.5;
 			cursor: pointer;
-			transition: opacity 0.5s;
 		}
 	}
 
-	@include desktop {
+	// @include desktop {
 		display: none;
-	}
+	// }
 
 	@include tablets {
 		display: block;

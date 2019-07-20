@@ -9,14 +9,14 @@
 	}
 
 	&__item {
-		margin-left: 18px;
+		margin-left: 26px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		position: relative;
 
 		&--last {
-			padding-left: 20px;
+			padding-left: 33px;
 			color: $dark-shade-50;
 			border-left: 1px solid $dark-shade-10;
 		}

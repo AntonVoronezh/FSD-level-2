@@ -1,0 +1,32 @@
+.footer-big {
+	height: 367px;
+	box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+	color: $dark-shade-75;
+	margin: auto;
+
+	&__wrap {
+		display: flex;
+		width: 660px;
+		flex-direction: column;
+
+		@include tablets {
+			width: 90%;
+		}
+	}
+
+	&__top {
+		margin-top: 100px;
+		margin-bottom: 18px;
+	}
+
+	&__center {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	&__bottom {
+		display: flex;
+		justify-content: center;
+		border: 1px solid #000000;
+	}
+}
