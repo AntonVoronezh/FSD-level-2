@@ -1,10 +1,11 @@
-import '../../views/common/footer/footer';
+import '../../views/common/footer-small/footer-small';
 import '../../views/common/header/header';
 import '../../views/common/main/main';
 import '../../views/common/aside/aside';
 import '../../views/common/maincontent/maincontent';
 import '../../views/common/logo/logo';
 import '../../views/common/header-nav/header-nav';
+import '../../views/common/footer-nav/footer-nav';
 import '../../views/common/btn/btn';
 import '../../views/common/header-nav-mobile/header-nav-mobile';
 console.log('demo.js loaded');
