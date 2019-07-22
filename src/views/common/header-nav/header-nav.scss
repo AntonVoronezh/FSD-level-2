@@ -25,9 +25,14 @@
 	&__link {
 		color: $dark-shade-50;
 		text-decoration: none;
+		transition: color 0.5s;
 
 		&--active {
 			font-family: 'Montserrat-Bold', sans-serif;
+		}
+
+		&:hover {
+			color: $dark-shade-75;
 		}
 	}
 
@@ -72,6 +77,3 @@
 		display: none;
 	}
 }
-
-
-

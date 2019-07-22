@@ -1,15 +1,31 @@
 .footer-nav
   .container
-    .footer-nav__wrap 
-      .footer-nav__block
+    nav.footer-nav__wrap 
+      .footer-nav__block.footer-nav__block--margin
         include ../logo/logo.pug
-        | Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
+        p.footer-nav__text Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
       .footer-nav__block
         h3 Navigation
-
+        - var titlesNavigation = ['About Us','News','Support','Products'];
+            ul.footer-nav__list
+              each title, i in titlesNavigation
+                li.footer-nav__item
+                  a(href=`${title}`).footer-nav__link #{title}
       .footer-nav__block
         h3 About us
+        - var titlesAbout = ['Who we are','Our team','Careers','Investors'];
+          ul.footer-nav__list
+            each title, i in titlesAbout
+              li.footer-nav__item
+                a(href=`${title}`).footer-nav__link #{title}
       .footer-nav__block
         h3 Support
+        - var titlesAbout = ['Documentation','Community','Get in Touch'];
+          ul.footer-nav__list
+            each title, i in titlesAbout
+              li.footer-nav__item
+                a(href=`${title}`).footer-nav__link #{title}
       .footer-nav__block
         h3 Subscribe to our newsletter
+        p.footer-nav__text Receive our latest news and promotions in your inbox!
+        .a
