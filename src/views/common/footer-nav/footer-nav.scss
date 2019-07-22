@@ -2,31 +2,21 @@
 	height: 372px;
 	box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
 	color: $dark-shade-75;
-	margin: auto;
-	border: 1px solid #000000;
 
 	&__wrap {
 		display: flex;
-		// width: 660px;
-		flex-direction: column;
+		justify-content: space-between;
+		width: 100%;
+		border: 1px solid red;
+		margin-top: 104px;
+		margin-bottom: 100px;
 
 		@include tablets {
 			width: 90%;
 		}
 	}
 
-	&__top {
-		margin-top: 100px;
-		margin-bottom: 18px;
-	}
-
-	&__center {
-		text-align: center;
-		margin-bottom: 20px;
-	}
-
-	&__bottom {
-		display: flex;
-		justify-content: center;
+	&__block {
+		border: 1px solid #000000;
 	}
 }
