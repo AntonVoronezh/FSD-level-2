@@ -1,26 +1,38 @@
 .btn {
-	height: 34px;
-	padding-left: 16px;
-	padding-right: 16px;
-	border-radius: 22px;
 	text-transform: uppercase;
 	font-size: 12px;
 	line-height: 15px;
-    font-family: 'Montserrat-Bold';
-    // margin-left: 23px;
+	font-family: 'Montserrat-Bold';
+	transition: opacity 0.5s;
+
+	&:hover, &:focus {
+		opacity: 0.5;
+	}
+
+	&--navigation {
+	}
 
 	&--white {
 		background-color: #fff;
 		color: $purple;
 		border: 2px solid $purple;
-    }
-    
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
 	&--purple {
-		background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-        color: #fff;
-        height: 38px;
-        padding-left: 18px;
-        padding-right: 18px;
-		// border: 2px solid $purple;
+		background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+		color: #fff;
+		height: 38px;
+		padding-left: 18px;
+		padding-right: 18px;
+	}
+
+	&--counter {
+		height: 34px;
+		border-radius: 22px;
+	}
+
+	&--small {
 	}
 }

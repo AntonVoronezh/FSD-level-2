@@ -31,7 +31,7 @@
 			font-family: 'Montserrat-Bold', sans-serif;
 		}
 
-		&:hover {
+		&:hover, &:focus {
 			color: $dark-shade-75;
 		}
 	}
