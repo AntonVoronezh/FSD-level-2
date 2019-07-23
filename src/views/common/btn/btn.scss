@@ -48,5 +48,18 @@
 		&--main {
 			height: 44px;
 		}
+
+		&--big {
+			width: 320px;
+			position: relative;
+
+			&::after {
+				content: '\e5c8';
+				font-family: 'Material Icons';
+				font-size: 24px;
+				position: absolute;
+				right: 10px;
+			}
+		}
 	}
 }
