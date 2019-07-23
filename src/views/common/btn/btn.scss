@@ -3,36 +3,71 @@
 	font-size: 12px;
 	line-height: 15px;
 	font-family: 'Montserrat-Bold';
-	transition: opacity 0.5s;
 
-	&:hover, &:focus {
-		opacity: 0.5;
-	}
-
-	&--navigation {
-	}
-
-	&--white {
-		background-color: #fff;
-		color: $purple;
-		border: 2px solid $purple;
+	&__counter {
+		border-radius: 22px;
 		padding-left: 16px;
 		padding-right: 16px;
+		transition: opacity 0.5s, border 0.5s;
+
+		&--white {
+			background-color: #fff;
+			color: $purple;
+			border: 2px solid $purple;
+
+			&:hover,
+			&:focus {
+				border: 2px solid rgba(188,156,255, .5);
+			}
+		}
+
+		&--purple {
+			background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+			color: #fff;
+
+			&:hover,
+			&:focus {
+				opacity: 0.5;
+			}
+		}
+
+		&--nav {
+			height: 34px;
+		}
+
+		&--main {
+			height: 44px;
+		}
 	}
 
-	&--purple {
-		background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-		color: #fff;
-		height: 38px;
-		padding-left: 18px;
-		padding-right: 18px;
-	}
+	// &__nav {
+	// 	height: 34px;
+	// 	border-radius: 22px;
+	// 	padding-left: 16px;
+	// 	padding-right: 16px;
 
-	&--counter {
-		height: 34px;
-		border-radius: 22px;
-	}
+	// }
 
-	&--small {
-	}
+	// &__main {
+	// 	height: 44px;
+	// 	border-radius: 22px;
+	// 	padding-left: 16px;
+	// 	padding-right: 16px;
+
+	// 	&--white {
+	// 		background-color: #fff;
+	// 		color: $purple;
+	// 		border: 2px solid $purple;
+	// 	}
+
+	// 	&--purple {
+	// 		background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+	// 		color: #fff;
+	// 	}
+
+	// 	&:hover,
+	// 	&:focus {
+	// 		opacity: 0.5;
+	// 	}
+	// }
 }
