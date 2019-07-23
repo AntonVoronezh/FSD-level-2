@@ -2,7 +2,6 @@
 	width: 241px;
 	display: flex;
 	flex-direction: column;
-	// justify-content: center;
 	align-items: center;
 
 	&__numbers {
@@ -21,8 +20,8 @@
 	&__list {
 		display: flex;
 		height: 40px;
-
-
+	}
+	
 	&__item {
 		width: 40px;
 	}
