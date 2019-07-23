@@ -8,4 +8,5 @@ import '../../views/common/header-nav/header-nav';
 import '../../views/common/footer-nav/footer-nav';
 import '../../views/common/btn/btn';
 import '../../views/common/header-nav-mobile/header-nav-mobile';
+import '../../views/common/pagination/pagination';
 console.log('demo.js loaded');

@@ -1,0 +1,65 @@
+.btn {
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 15px;
+	font-family: 'Montserrat-Bold';
+	transition: opacity 0.5s, border 0.5s, color 0.5s;
+
+	&__without {
+		color: $purple;
+		background-color: #fff;
+
+		&:hover,
+		&:focus {
+			color: $dark-shade-50;
+		}
+	}
+
+	&__counter {
+		border-radius: 22px;
+		padding-left: 16px;
+		padding-right: 16px;
+
+		&--white {
+			background-color: #fff;
+			color: $purple;
+			border: 2px solid $purple;
+
+			&:hover,
+			&:focus {
+				border: 2px solid rgba(188, 156, 255, 0.5);
+			}
+		}
+
+		&--purple {
+			background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+			color: #fff;
+
+			&:hover,
+			&:focus {
+				opacity: 0.5;
+			}
+		}
+
+		&--nav {
+			height: 34px;
+		}
+
+		&--main {
+			height: 44px;
+		}
+
+		&--big {
+			width: 320px;
+			position: relative;
+
+			&::after {
+				content: '\e5c8';
+				font-family: 'Material Icons';
+				font-size: 24px;
+				position: absolute;
+				right: 10px;
+			}
+		}
+	}
+}
