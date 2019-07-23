@@ -1,0 +1,14 @@
+nav.pagination
+  .pagination__numbers
+    - var pag = ['1','2','3','...','15',''];
+        ul.pagination__list
+          each p,i in pag
+            li.pagination__item
+              if(i===0)
+                a(href=`#`).pagination__link.pagination__link--first #{p}
+              else if (i===pag.length-1)
+                a(href=`#`).pagination__link.pagination__link--last #{p}
+              else
+                a(href=`#`).pagination__link #{p}
+  .pagination__text
+    |1 – 12 из 100+ вариантов аренды
