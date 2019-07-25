@@ -10,11 +10,15 @@ html(lang="ru")
     
     title Portfolio | #{title}
     link(rel='stylesheet' href='main.min.css')
+    link(rel='stylesheet' href='http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css')
+    script(src='http://code.jquery.com/jquery-1.12.4.js')
+    script(src='http://code.jquery.com/ui/1.12.1/jquery-ui.js')
   body
     .wrapper
       block content
 
     //- script(src='bootloader.bundle.js')
     //- script(src='vendor.bundle.js')
+
     block scripts
       script(src="demo.bundle.js")
