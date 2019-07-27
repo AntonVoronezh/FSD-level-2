@@ -1,3 +1,37 @@
-.aside {
-color: red
+// https://yoksel.github.io/url-encoder/ru/
+.checkbox {
+    display: flex;
+    align-items: center;
+
+	&__input {
+		display: none;
+	}
+
+	&__custom {
+		position: relative;
+		display: block;
+		width: 20px;
+		height: 20px;
+		border: 1px solid rgba(31, 32, 65, 0.25);
+		box-sizing: border-box;
+		border-radius: 4px;
+	}
+
+	&__label {
+        margin-left: 10px;
+        color: $dark-shade-50;
+	}
+
+	&__input:checked + &__custom::before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 4px;
+		right: 4px;
+		bottom: 4px;
+		left: 4px;
+        // background: blue;
+        background-image: url("data:image/svg+xml,%3Csvg width='10' height='9' viewBox='0 0 10 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.46439 2.40768L5.70703 6.65032L4.29282 8.06453L0.0501771 3.82189L1.46439 2.40768Z' fill='url(%23paint0_linear)'/%3E%3Cpath d='M8.53546 0.993466L9.94967 2.40768L4.29282 8.06453L2.8786 6.65032L8.53546 0.993466Z' fill='url(%23paint1_linear)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='7.82835' y1='0.286359' x2='2.1715' y2='5.94321' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23BC9CFF'/%3E%3Cstop offset='1' stop-color='%238BA4F9'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear' x1='7.82835' y1='0.286359' x2='2.1715' y2='5.94321' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23BC9CFF'/%3E%3Cstop offset='1' stop-color='%238BA4F9'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+	}
 }
+

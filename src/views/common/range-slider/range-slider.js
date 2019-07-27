@@ -1,15 +1,19 @@
-// import $ from 'jquery';
-// global.jQuery = $;
-// global.$ = $;
+$( ".js-range-slider" ).slider({
+    range: true,
+    min: 0,
+    max: 15000,
+    values: [ 5000, 10000 ],
+    slide: function( event, ui ) {
+      $( ".range__amount" ).val(ui.values[ 0 ] + "P - " + ui.values[ 1 ]  + "P");
+    }
+  });
 
-// if (!$.fn.slider) {
-//     require('jquery-ui/ui/widgets/slider');
-//     require('jquery-ui/themes/base/slider.css');
-// }
+  $( ".range__amount" ).val( $( ".js-range-slider" ).slider( "values", 0 ) +
+    "P - " + $( ".js-range-slider" ).slider( "values", 1 ) + "P" );
 
-// $(".js-range-slider").ionRangeSlider();
-// $( "#slider" ).height(400);
-// $( "js-range-slider" ).height(400);
+    $(function() {
+        $("#slider").slider();
+      });
 
 console.log('slider-------');
 
