@@ -99,3 +99,41 @@
 		}
 	}
 }
+
+.rate {
+	width: 24px;
+	height: 24px;
+	background: #ffffff;
+	position: relative;
+	transition: opacity 0.5s;
+
+	&::before {
+		font-family: 'Material Icons';
+		font-size: 24px;
+		line-height: 20px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		text-transform: uppercase;
+		background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	&:hover {
+		opacity: 0.5;
+	}
+
+	&--full {
+		&::before {
+		content: '\e838';
+		}
+	}
+
+	&--border  {
+		&::before {
+		content: '\e83a';
+		}
+	}
+
+}
