@@ -63,3 +63,39 @@
 		}
 	}
 }
+
+.like {
+	width: 40px;
+	height: 20px;
+	background: #ffffff;
+	box-sizing: border-box;
+	border-radius: 10px;
+	font-size: 10px;
+	line-height: 12px;
+	color: $purple;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	&::before {
+		font-family: 'Material Icons';
+		font-size: 10px;
+		line-height: 9px;
+	}
+
+	&--smoul {
+		border: 1px solid $dark-shade-25;
+
+		&::before {
+			content: '\e87e';
+		}
+	}
+
+	&--big {
+		border: 1px solid $purple;
+
+		&::before {
+			content: '\e87d';
+		}
+	}
+}
