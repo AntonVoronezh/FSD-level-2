@@ -1,5 +1,60 @@
-.radio-block {
+.toggle-block {
+
+}
+
+.toggle {
 	display: flex;
-	justify-content: space-between;
-	width: 220px;
+	flex-grow: 1;
+	
+	&__wrap {
+		position: relative;
+		width: 40px;
+	}
+
+	&__input {
+		display: none;
+	}
+
+	&__custom {
+		display: inline-block;
+		width: 40px;
+		height: 20px;
+		background: #ffffff;
+		border: 1px solid #bc9cff;
+		box-sizing: border-box;
+		border-radius: 10px;
+		position: absolute;
+		cursor: pointer;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		-webkit-transition: 0.4s;
+		transition: 0.4s;
+
+		&:before {
+			position: absolute;
+			content: '';
+			left: 4px;
+			top: 3px;
+			-webkit-transition: 0.4s;
+			transition: 0.4s;
+			width: 12px;
+			height: 12px;
+			background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+			border-radius: 10px;
+		}
+	}
+
+	&__label {
+		margin-left: 10px;
+		color: $dark-shade-75;
+		line-height: 24px;
+	}
+
+	&__input:checked + &__custom:before {
+		-webkit-transform: translateX(20px);
+		-ms-transform: translateX(20px);
+		transform: translateX(20px);
+	}
 }
