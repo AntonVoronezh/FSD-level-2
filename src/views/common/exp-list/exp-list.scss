@@ -1,0 +1,19 @@
+.rate-block {
+	// display: flex;
+	
+
+	&__list {
+		width: 120px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item {
+		width: 24px;
+		height: 24px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
