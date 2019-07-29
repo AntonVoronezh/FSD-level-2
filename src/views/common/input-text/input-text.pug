@@ -1,2 +1,6 @@
-mixin inputText(placeholder)
-  input(type="text" placeholder=placeholder).input-text
+mixin inputText(placeholder, isMasked)
+  if isMasked === false
+    input(type="text" placeholder=placeholder).input-text
+  if isMasked === true
+    input(type="text" placeholder=placeholder pattern="(1[0-2]|0[1-9])\.(1[5-9]|2\d)" data-valid-example="01.10.1982").input-text
+     
