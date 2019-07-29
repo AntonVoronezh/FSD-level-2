@@ -11,6 +11,7 @@ import '../../views/common/header-nav-mobile/header-nav-mobile';
 import '../../views/common/pagination/pagination';
 import '../../views/common/range-slider/range-slider';
 import '../../views/common/checkbox/checkbox';
-
+import '../../views/common/exp-list/exp-list';
 
 console.log('demo.js loadedd');
+

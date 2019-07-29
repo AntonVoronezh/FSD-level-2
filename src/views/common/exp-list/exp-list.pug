@@ -1,19 +1,26 @@
-mixin rate(num)
-    if num === '1'
-       - var titles = ['+','','','',''];
-    if num === '2'
-       - var titles = ['+','+','','',''];
-    if num === '3'
-       - var titles = ['+','+','+','',''];
-    if num === '4'
-       - var titles = ['+','+','+','+',''];
-    if num === '5'
-       - var titles = ['+','+','+','+','+'];
-    .rate-block  
-        ul.rate-block__list
-            each title in titles
-                li.rate-block__item
-                    if title === '+'
-                        button.rate.rate--full
-                    else
-                        button.rate.rate--border                       
+.exp-list.js-exp-list
+   span.exp-list__title expandable checkbox list
+   - 
+      var titles = [      
+         {title:'Завтрак', isChecked:false},       
+         {title:'Письменный стол', isChecked:true}, 
+         {title:'Стул для кормления', isChecked:true}, 
+         {title:'Кроватка', isChecked:true}, 
+         {title:'Телевизор', isChecked:false}, 
+         {title:'Шампунь', isChecked:false}, 
+         {title:'Телевизор', isChecked:false}, 
+         {title:'Шампунь', isChecked:false}
+         ];
+   ul.exp-list__list
+      each a in titles
+         li.exp-list__item
+            label.checkbox
+               if a.isChecked === true
+                  input(type="checkbox" name="checkbox-smoke" checked).checkbox__input
+                  span.checkbox__custom
+                  span.checkbox__label #{a.title}
+               else
+                  input(type="checkbox" name="checkbox-smoke").checkbox__input
+                  span.checkbox__custom
+                  span.checkbox__label #{a.title}
+      
