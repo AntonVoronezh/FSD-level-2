@@ -1,9 +1,2 @@
-footer.footer-big
-  .container
-    .footer-big__wrap 
-      .footer-big__top
-        include ../logo/logo.pug
-      .footer-big__center
-        |Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
-      .footer-big__bottom
-        include ../social-links/social-links.pug
+mixin inputText(placeholder)
+  input(type="text" placeholder=placeholder).input-text
