@@ -1,24 +1,27 @@
-.exp-list {
-	cursor: pointer;
-	width: 266px;
+.dropdown {
+	width: 320px;
 	transition: opacity 0.5s, height 0.5s;
 
 	&__title {
-		font-family: 'Montserrat-Bold', sans-serif;
-		color: $dark-shade-100;
-		font-size: 12px;
-		line-height: 15px;
-		text-transform: uppercase;
+		height: 44px;
+		font-size: 14px;
+		line-height: 24px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		padding-right: 7px;
+		border: 1px solid $dark-shade-25;
+		box-sizing: border-box;
+		border-radius: 4px;
+		padding-left: 15px;
+		color: $dark-shade-75;
+		cursor: pointer;
 	}
 
 	&__list {
 		opacity: 0;
 		height: 0;
-		margin-top: 15px;
+		// margin-top: 15px;
 		transition: opacity 0.5s, height 0.5s;
 	}
 
@@ -44,8 +47,85 @@
 	}
 
 	&.open &__list {
-		height: 100%;
+		margin-top: 0;
+		height: 159px;
 		opacity: 1;
+		border-bottom-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+		border: 1px solid rgba(31, 32, 65, 0.5);
+		box-sizing: border-box;
+		box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+		border-top-color: transparent;
 		transition: opacity 0.5s, height 0.5s;
+	}
+	&.open &__title {
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		border: 1px solid rgba(31, 32, 65, 0.5);
+	}
+
+	&__item {
+		height: 40px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-right: 8px;
+		margin-left: 15px;
+
+		&-left {
+			font-family: 'Montserrat-Bold', sans-serif;
+			color: $dark-shade-100;
+			font-size: 12px;
+			line-height: 15px;
+			text-transform: uppercase;
+		}
+
+		&-right {
+			display: flex;
+		}
+	}
+
+	&__minus {
+		width: 30px;
+		height: 30px;
+		border: 1px solid rgba(31, 32, 65, 0.25);
+		box-sizing: border-box;
+		border-radius: 22px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: 'Montserrat';
+		font-size: 18px;
+		line-height: 22px;
+		color: rgba(31, 32, 65, 0.25);
+		cursor: pointer;
+	}
+
+	&__plus {
+		width: 30px;
+		height: 30px;
+		border: 1px solid rgba(31, 32, 65, 0.5);
+		box-sizing: border-box;
+		border-radius: 22px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: 'Montserrat';
+		font-size: 18px;
+		line-height: 22px;
+		color: rgba(31, 32, 65, 0.5);
+		cursor: pointer;
+	}
+
+	&__number {
+		width: 30px;
+		height: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: 'Montserrat-Bold', sans-serif;
+		color: $dark-shade-100;
+		font-size: 12px;
+		line-height: 15px;
 	}
 }

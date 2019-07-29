@@ -15,3 +15,9 @@ import '../../views/common/exp-list/exp-list';
 
 console.log('demo.js loadedd');
 
+const dropdown = document.querySelector('.js-dropdown');
+const dropdownOpen = document.querySelector('.dropdown');
+
+dropdown.addEventListener('click', () => {
+	dropdownOpen.classList.toggle('open');
+});

@@ -1,5 +1,5 @@
-// const expList = document.querySelector('.exp-list');
+const dropdown = document.querySelector('.js-dropdown');
 
-// expList.addEventListener('click', () => {
-// 	expList.classList.toggle('open');
-// });
+dropdown.addEventListener('click', () => {
+	dropdown.classList.toggle('open');
+});

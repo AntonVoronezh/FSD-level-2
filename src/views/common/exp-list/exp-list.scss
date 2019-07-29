@@ -2,8 +2,9 @@
 	cursor: pointer;
 	width: 266px;
 	transition: opacity 0.5s, height 0.5s;
-
+	
 	&__title {
+		height: 44px;
 		font-family: 'Montserrat-Bold', sans-serif;
 		color: $dark-shade-100;
 		font-size: 12px;
