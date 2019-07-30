@@ -2,7 +2,7 @@
 	cursor: pointer;
 	width: 266px;
 	transition: opacity 0.5s, height 0.5s;
-	
+
 	&__title {
 		height: 44px;
 		font-family: 'Montserrat-Bold', sans-serif;
@@ -17,10 +17,7 @@
 	}
 
 	&__list {
-		opacity: 0;
-		height: 0;
-		margin-top: 15px;
-		transition: opacity 0.5s, height 0.5s;
+		display: none;
 	}
 
 	& &__title::after {
@@ -45,8 +42,6 @@
 	}
 
 	&.open &__list {
-		height: 100%;
-		opacity: 1;
-		transition: opacity 0.5s, height 0.5s;
+		display: block;
 	}
 }
