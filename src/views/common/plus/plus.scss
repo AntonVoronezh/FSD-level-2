@@ -1,37 +1,66 @@
-.radio {
-	display: flex;
-	align-items: stretch;
+.plus {
+	width: 280px;
 
-	&__input {
-		display: none;
-	}
-
-	&__custom {
-		width: 20px;
-		height: 20px;
-		background: #ffffff;
-		border: 1px solid #bc9cff;
-		box-sizing: border-box;
-		border-radius: 10px;
-
+	&__item {
 		display: flex;
-		justify-content: center;
 		align-items: center;
+		border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+		padding-bottom: 20px;
+		padding-top: 20px;
 	}
 
-	&__label {
-		margin-left: 10px;
-		color: $dark-shade-75;
-		line-height: 24px;
-	}
-
-	&__input:checked + &__custom::before {
-		content: '';
-		display: block;
-		position: absolute;
-		width: 12px;
-		height: 12px;
+	&__img {
+		font-family: 'Material Icons';
+		font-style: normal;
+		font-weight: normal;
+		font-size: 48px;
+		line-height: 41px;
+		display: flex;
+		align-items: center;
+		text-align: center;
 		background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-		border-radius: 10px;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		display: block;
+		margin-right: 10px;
+
+		&--emoticon {
+			&::after {
+				content: 'insert_emoticon';
+			}
+		}
+
+		&--location {
+			&::after {
+				content: 'location_city';
+			}
+		}
+
+		&--whatshot {
+			&::after {
+				content: 'whatshot';
+			}
+		}
 	}
+
+	&__text-title {
+		font-family: 'Montserrat-Bold', sans-serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 24px;
+		color: rgba(31, 32, 65, 0.75);
+	}
+
+	&__text-text {
+	}
+}
+
+.about-title {
+	font-family: 'Quicksand-Bold', sans-serif;
+	// font-style: normal;
+	// font-weight: bold;
+	font-size: 19px;
+	line-height: 24px;
+	color: #1f2041;
 }
