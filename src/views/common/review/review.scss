@@ -1,0 +1,66 @@
+.plus {
+	width: 280px;
+
+	&__item {
+		display: flex;
+		align-items: center;
+		border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+
+	&__img {
+		font-family: 'Material Icons';
+		font-style: normal;
+		font-weight: normal;
+		font-size: 48px;
+		line-height: 41px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		display: block;
+		margin-right: 10px;
+
+		&--emoticon {
+			&::after {
+				content: 'insert_emoticon';
+			}
+		}
+
+		&--location {
+			&::after {
+				content: 'location_city';
+			}
+		}
+
+		&--whatshot {
+			&::after {
+				content: 'whatshot';
+			}
+		}
+	}
+
+	&__text-title {
+		font-family: 'Montserrat-Bold', sans-serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 24px;
+		color: rgba(31, 32, 65, 0.75);
+	}
+
+	&__text-text {
+	}
+}
+
+.about-title {
+	font-family: 'Quicksand-Bold', sans-serif;
+	// font-style: normal;
+	// font-weight: bold;
+	font-size: 19px;
+	line-height: 24px;
+	color: #1f2041;
+}
