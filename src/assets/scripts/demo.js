@@ -13,44 +13,42 @@ import '../../views/common/range-slider/range-slider';
 import '../../views/common/checkbox/checkbox';
 import '../../views/common/exp-list/exp-list';
 import '../../views/common/dropdown/dropdown';
+import '../../views/common/dropdown-count/dropdown-count';
 
 console.log('demo.js loadedd');
 
-// const dropdown = document.querySelector('.js-dropdown');
-// const dropdownOpen = document.querySelector('.dropdown');
+// const dropdownСount = document.querySelector('.js-dropdown-count');
+// const dropdownСountOpen = document.querySelector('.dropdown-count');
 
-// dropdown.addEventListener('click', () => {
-// 	dropdownOpen.classList.toggle('open');
+// dropdownСount.addEventListener('click', () => {
+// 	dropdownСountOpen.classList.toggle('open');
 // });
 
-// const jsBigMinus = document.querySelector('.js-big-minus');
-// const jsBigNumber = document.querySelector('.js-big-number');
-// const jsBigPlus = document.querySelector('.js-big-plus');
+// const jsBigMinusCount = document.querySelector('.js-big-count-minus');
+// const jsBigNumberCount = document.querySelector('.js-big-count-number');
+// const jsBigPlusCount = document.querySelector('.js-big-count-plus');
 
-// const reset = document.querySelector('.gray');
-// const jsReset = document.querySelector('.js-reset');
-
-// jsBigMinus.addEventListener('click', () => {
-// 	if (jsBigNumber.innerHTML > 0) {
-// 		jsBigNumber.innerHTML -= 1;
+// jsBigMinusCount.addEventListener('click', () => {
+// 	if (jsBigNumberCount.innerHTML > 0) {
+// 		jsBigNumberCount.innerHTML -= 1;
 // 	}
 
-// 	if (jsBigNumber.innerHTML === '0') {
-// 		jsBigMinus.classList.remove('dropdown__minus--active');
+// 	if (jsBigNumberCount.innerHTML === '0') {
+// 		jsBigMinusCount.classList.remove('dropdown-count__minus--active');
 // 	}
 
 // 	count();
 // });
 
-// jsBigPlus.addEventListener('click', () => {
-// 	jsBigNumber.innerHTML = +jsBigNumber.innerHTML + 1;
-// 	jsBigMinus.classList.add('dropdown__minus--active');
+// jsBigPlusCount.addEventListener('click', () => {
+// 	jsBigNumberCount.innerHTML = +jsBigNumberCount.innerHTML + 1;
+// 	jsBigMinusCount.classList.add('dropdown-count__minus--active');
 // 	count();
 // });
 
-// const jsSmallMinus = document.querySelector('.js-small-minus');
-// const jsSmallNumber = document.querySelector('.js-small-number');
-// const jsSmallPlus = document.querySelector('.js-small-plus');
+// const jsSmallMinus = document.querySelector('.js-small-count-minus');
+// const jsSmallNumber = document.querySelector('.js-small-count-number');
+// const jsSmallPlus = document.querySelector('.js-small-count-plus');
 
 // jsSmallMinus.addEventListener('click', () => {
 // 	if (jsSmallNumber.innerHTML > 0) {
@@ -58,7 +56,7 @@ console.log('demo.js loadedd');
 // 	}
 
 // 	if (jsSmallNumber.innerHTML === '0') {
-// 		jsSmallMinus.classList.remove('dropdown__minus--active');
+// 		jsSmallMinus.classList.remove('dropdown-count__minus--active');
 // 	}
 
 // 	count();
@@ -66,13 +64,13 @@ console.log('demo.js loadedd');
 
 // jsSmallPlus.addEventListener('click', () => {
 // 	jsSmallNumber.innerHTML = +jsSmallNumber.innerHTML + 1;
-// 	jsSmallMinus.classList.add('dropdown__minus--active');
+// 	jsSmallMinus.classList.add('dropdown-count__minus--active');
 // 	count();
 // });
 
-// const jsSmallerMinus = document.querySelector('.js-smaller-minus');
-// const jsSmallerNumber = document.querySelector('.js-smaller-number');
-// const jsSmallerPlus = document.querySelector('.js-smaller-plus');
+// const jsSmallerMinus = document.querySelector('.js-smaller-count-minus');
+// const jsSmallerNumber = document.querySelector('.js-smaller-count-number');
+// const jsSmallerPlus = document.querySelector('.js-smaller-count-plus');
 
 // jsSmallerMinus.addEventListener('click', () => {
 // 	if (jsSmallerNumber.innerHTML > 0) {
@@ -80,7 +78,7 @@ console.log('demo.js loadedd');
 // 	}
 
 // 	if (jsSmallerNumber.innerHTML === '0') {
-// 		jsSmallerMinus.classList.remove('dropdown__minus--active');
+// 		jsSmallerMinus.classList.remove('dropdown-count__minus--active');
 // 	}
 
 // 	count();
@@ -88,41 +86,23 @@ console.log('demo.js loadedd');
 
 // jsSmallerPlus.addEventListener('click', () => {
 // 	jsSmallerNumber.innerHTML = +jsSmallerNumber.innerHTML + 1;
-// 	jsSmallerMinus.classList.add('dropdown__minus--active');
+// 	jsSmallerMinus.classList.add('dropdown-count__minus--active');
 // 	count();
 // });
 
 // function count() {
-// 	let count = +jsSmallerNumber.innerHTML + +jsSmallNumber.innerHTML + +jsBigNumber.innerHTML;
+// 	let text1, text2;
 
-// 	if (count >= 0) {
-// 		reset.classList.add('open');
+// 	let com = +jsBigNumberCount.innerHTML;
+// 	let bad = +jsSmallNumber.innerHTML;
 
-// 		let text;
-// 		if (count === 1) {
-// 			text = ' гость';
-// 		}
-
-// 		if (count > 1 && count < 5) {
-// 			text = ' гостя';
-// 		}
-// 		if (count > 4) {
-// 			text = ' гостей';
-// 		}
-// 		if (count === 0) {
-// 			text = ' Сколько гостей';
-// 			count = '';
-// 		}
-
-// 		dropdown.innerHTML = count + text;
-// 	} else {
-// 		reset.classList.reset('open');
+// 	if (com > 0 && com < 5) {
+// 		text1 = com + ' спальни, ';
 // 	}
-// }
 
-// jsReset.addEventListener('click', () => {
-// 	dropdown.innerHTML = ' Сколько гостей';
-// 	jsSmallerNumber.innerHTML = 0;
-// 	jsSmallNumber.innerHTML = 0;
-// 	jsBigNumber.innerHTML = 0;
-// });
+// 	if (bad > 0 && bad < 3) {
+// 		text2 = bad + ' кровати... ';
+// 	}
+
+// 	dropdownСount.innerHTML = text1 + text2;
+// }

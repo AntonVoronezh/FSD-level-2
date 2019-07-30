@@ -1,5 +1,5 @@
-.dropdown {
-	width: 320px;
+.dropdown-count {
+	width: 266px;
 	transition: opacity 0.5s, height 0.5s;
 
 	&__title {
@@ -32,7 +32,7 @@
 		content: '\e5cf';
 		font-family: 'Material Icons';
 		font-size: 24px;
-		color: $dark-shade-50;
+		color: $dark-shade-75;
 	}
 
 	&.open &__title::after {
@@ -40,7 +40,7 @@
 		content: '\e5cf';
 		font-family: 'Material Icons';
 		font-size: 24px;
-		color: $dark-shade-50;
+		color: $dark-shade-75;
 		-webkit-transform: rotate(180deg);
 		-moz-transform: rotate(180deg);
 		-o-transform: rotate(180deg);
