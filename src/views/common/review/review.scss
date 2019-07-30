@@ -1,50 +1,36 @@
-.plus {
-	width: 280px;
+.review {
+	&__title {
+		display: flex;
+		justify-content: space-between;
+	}
 
 	&__item {
 		display: flex;
-		align-items: center;
-		border-bottom: 1px solid rgba(31, 32, 65, 0.1);
-		padding-bottom: 20px;
-		padding-top: 20px;
-	}
+		flex-direction: column;
 
 	&__img {
-		font-family: 'Material Icons';
-		font-style: normal;
-		font-weight: normal;
-		font-size: 48px;
-		line-height: 41px;
-		display: flex;
-		align-items: center;
-		text-align: center;
-		background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		display: block;
-		margin-right: 10px;
+		height: 48px;
+		width: 48px;
+		border: 2px solid #ffffff;
+		box-sizing: border-box;
+		box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.1);
+		border-radius: 32px;
 
-		&--emoticon {
-			&::after {
-				content: 'insert_emoticon';
-			}
-		}
-
-		&--location {
-			&::after {
-				content: 'location_city';
-			}
-		}
-
-		&--whatshot {
-			&::after {
-				content: 'whatshot';
-			}
+		&--1 {
+			background: url('assets/images/review/image.png') 55% 20%;
 		}
 	}
 
-	&__text-title {
-		font-family: 'Montserrat-Bold', sans-serif;
+	&__top {
+		display: flex;
+	}
+
+	&__right {
+		margin-left: 10px;
+	}
+
+	&__name {
+		font-family: 'Montserrat-Bold';
 		font-style: normal;
 		font-weight: bold;
 		font-size: 14px;
@@ -52,15 +38,9 @@
 		color: rgba(31, 32, 65, 0.75);
 	}
 
-	&__text-text {
+	&__bottom {
+		margin-top: 10px;
+		display: flex;
 	}
-}
 
-.about-title {
-	font-family: 'Quicksand-Bold', sans-serif;
-	// font-style: normal;
-	// font-weight: bold;
-	font-size: 19px;
-	line-height: 24px;
-	color: #1f2041;
 }
