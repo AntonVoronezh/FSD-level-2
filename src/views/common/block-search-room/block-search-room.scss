@@ -1,0 +1,39 @@
+.rich {
+	width: 266px;
+	height: 145px;
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		margin-top: 15px;
+	}
+
+	&__item {
+		display: flex;
+		margin-bottom: 10px;
+	}
+
+	&__checkbox {
+		width: 20px;
+		height: 20px;
+	}
+
+	&__checkbox-block {
+		margin-right: 10px;
+	}
+
+	&__text-title {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 18px;
+		color: rgba(31, 32, 65, 0.75);
+	}
+
+	&__text-text {
+		color: rgba(31, 32, 65, 0.5);
+		margin-top: 5px;
+		font-size: 12px;
+		line-height: 14px;
+	}
+}
