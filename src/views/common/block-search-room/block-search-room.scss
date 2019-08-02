@@ -1,39 +1,166 @@
-.rich {
-	width: 266px;
-	height: 145px;
+.block-search-room {
+	width: 380px;
+	height: 374px;
+	background: #ffffff;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
 
-	&__list {
-		display: flex;
-		flex-direction: column;
-		margin-top: 15px;
-	}
-
-	&__item {
-		display: flex;
-		margin-bottom: 10px;
-	}
-
-	&__checkbox {
-		width: 20px;
-		height: 20px;
-	}
-
-	&__checkbox-block {
-		margin-right: 10px;
-	}
-
-	&__text-title {
+	&__title {
+		font-family: 'Montserrat-Bold', sans-serif;
 		font-style: normal;
 		font-weight: bold;
-		font-size: 14px;
-		line-height: 18px;
-		color: rgba(31, 32, 65, 0.75);
+		font-size: 24px;
+		line-height: 30px;
+		color: #1f2041;
+		margin-top: 40px;
+		margin-left: 30px;
+		margin-right: 30px;
 	}
 
-	&__text-text {
-		color: rgba(31, 32, 65, 0.5);
-		margin-top: 5px;
-		font-size: 12px;
-		line-height: 14px;
+	&__label {
+border: 1px solid #000000;
 	}
 }
+
+
+// .ui-widget {
+// 	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+// 	background: #2e3641;
+// 	border: none;
+// 	border-radius: 0;
+// 	-webkit-border-radius: 0;
+// 	-moz-border-radius: 0;
+// }
+
+// .ui-datepicker {
+// 	padding: 0;
+// }
+
+// .ui-datepicker-header {
+// 	border: none;
+// 	background: transparent;
+// 	font-weight: normal;
+// 	font-size: 15px;
+// }
+
+// .ui-datepicker-header .ui-state-hover {
+// 	background: transparent;
+// 	border-color: transparent;
+// 	cursor: pointer;
+// 	border-radius: 0;
+// 	-webkit-border-radius: 0;
+// 	-moz-border-radius: 0;
+// }
+
+// .ui-datepicker .ui-datepicker-title {
+// 	margin-top: 0.4em;
+// 	margin-bottom: 0.3em;
+// 	color: #e9f0f4;
+// }
+
+// .ui-datepicker .ui-datepicker-prev-hover,
+// .ui-datepicker .ui-datepicker-next-hover,
+// .ui-datepicker .ui-datepicker-next,
+// .ui-datepicker .ui-datepicker-prev {
+// 	top: 0.9em;
+// 	border: none;
+// }
+
+// .ui-datepicker .ui-datepicker-prev-hover {
+// 	left: 2px;
+// }
+
+// .ui-datepicker .ui-datepicker-next-hover {
+// 	right: 2px;
+// }
+
+// .ui-datepicker .ui-datepicker-next span,
+// .ui-datepicker .ui-datepicker-prev span {
+// 	background-image: url(images/ui-icons_ffffff_256x240.png);
+// 	background-position: -32px 0;
+// 	margin-top: 0;
+// 	top: 0;
+// 	font-weight: normal;
+// }
+
+// .ui-datepicker .ui-datepicker-prev span {
+// 	background-position: -96px 0;
+// }
+
+// .ui-datepicker table {
+// 	margin: 0;
+// }
+
+// .ui-datepicker th {
+// 	padding: 1em 0;
+// 	color: #ccc;
+// 	font-size: 13px;
+// 	font-weight: normal;
+// 	border: none;
+// 	border-top: 1px solid #3a414d;
+// }
+
+// .ui-datepicker td {
+// 	background: #f97e76;
+// 	border: none;
+// 	padding: 0;
+// }
+
+// td .ui-state-default {
+// 	background: transparent;
+// 	border: none;
+// 	text-align: center;
+// 	padding: 0.5em;
+// 	margin: 0;
+// 	font-weight: normal;
+// 	color: #efefef;
+// 	font-size: 16px;
+// }
+
+// .ui-state-disabled {
+// 	opacity: 1;
+// }
+
+// .ui-state-disabled .ui-state-default {
+// 	color: #fba49e;
+// }
+
+// td .ui-state-active,
+// td .ui-state-hover {
+// 	background: #2e3641;
+// }
+
+// =========================================================
+// .ui-datepicker .selected-start:not(.selected-end) a,
+// .ui-datepicker .selected-end:not(.selected-start) a {
+//   background: #F3FDD5;
+// }
+
+// .ui-datepicker .selected.first-of-month:not(.selected-start) a {
+//   border-left: 2px dotted #D4E7F6;
+//   padding-left: 1px;
+// }
+
+// .ui-datepicker .selected.last-of-month:not(.selected-end) a {
+//   border-right: 2px dotted #D4E7F6;
+//   padding-right: 1px;
+// }
+// =============================================================
+
+.dp-highlight .ui-state-default {
+	background: #484 !important;
+	color: #FFF !important;
+  }
+  .ui-datepicker.ui-datepicker-multi  {
+	width: 100% !important;
+  }
+  .ui-datepicker-multi .ui-datepicker-group {
+  float:none;
+  }
+  #datepicker {
+	height: 300px;
+	overflow-x: scroll;
+  }
+.ui-widget { font-size: 100% }
