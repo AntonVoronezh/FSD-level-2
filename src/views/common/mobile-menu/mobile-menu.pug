@@ -1,47 +1,11 @@
-include ../rate-block/rate-block.pug  
-include ../input-text/input-text.pug
-include ../block-room/block-room.pug
+.mobile-menu  
+  .mobile-menu__close.js-mobile-menu-close
+  .mobile-menu__wrap
+    include ../logo/logo.pug
 
-main.main
-  .main__wrap 
-    h1 fgdfgdfgdfg
-    h2 fgdfgdfgdfg
-    h3 fgdfgdfgdfg
-    |ggggggggggggggggggggg
-    br
-    //- button.btn.btn__counter.btn__counter--white.btn__counter--main
-    //-   |CLICK ME
-    //- button.btn.btn__counter.btn__counter--purple.btn__counter--main
-    //-   |CLICK ME
-    //- button.btn.btn__without
-    //-   |CLICK ME
-    //- button.btn.btn__counter.btn__counter--purple.btn__counter--main.btn__counter--big
-    //-   |перейти к оплате
-    //- include ../pagination/pagination.pug
-    //- include ../range-slider/range-slider.pug
-    //- include ../checkboxs-block/checkboxs-block.pug
-    //- include ../radio-block/radio-block.pug
-    //- include ../toggle-block/toggle-block.pug
-    //- button.like.like--big
-    //-   |12
-    //- button.like.like--smoul
-    //-   |2
-    //- +rate('4')
-    //- +inputText('Email', false)
-    //- +inputText('ДД.ММ.ГГГГ', true)
-    //- include ../exp-list/exp-list.pug
-          //- include ../dropdown/dropdown.pug
-    //- include ../dropdown-count/dropdown-count.pug
-    //- include ../rich/rich.pug
-    //- include ../plus/plus.pug
-    //- include ../review/review.pug
-              //- include ../datepicker/datepicker.pug
-    include ../block-search-room/block-search-room.pug
-    include ../block-reg-acc/block-reg-acc.pug
-    include ../block-enter/block-enter.pug
-    include ../block-check/block-check.pug
-              //- include ../block-room/block-room.pug
-    +room('assets/images/rooms/1.png', 99, 'люкс', 1987, '1', 79)
-
-    
+      - var titles = ['Home','About Us','Services','Careers','News','Documentation', 'Login','Register'];
+        ul.mobile-menu__list
+          each title, i in titles
+            li.mobile-menu__item
+              a(href=`${title}`).mobile-menu__link #{title}
 

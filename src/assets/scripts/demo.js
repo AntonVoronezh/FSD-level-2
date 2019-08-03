@@ -11,19 +11,29 @@ import '../../views/common/header-nav-mobile/header-nav-mobile';
 import '../../views/common/pagination/pagination';
 import '../../views/common/range-slider/range-slider';
 import '../../views/common/checkbox/checkbox';
-import '../../views/common/exp-list/exp-list';
-import '../../views/common/dropdown/dropdown';
-import '../../views/common/dropdown-count/dropdown-count';
-import '../../views/common/datepicker/datepicker';
+// import '../../views/common/exp-list/exp-list';
+// import '../../views/common/dropdown/dropdown';
+// import '../../views/common/dropdown-count/dropdown-count';
+// import '../../views/common/datepicker/datepicker';
 
 console.log('demo.js loadedd');
 
-// const dropdown = document.querySelector('.js-dropdown');
-// const dropdownOpen = document.querySelector('.dropdown');
 
-// dropdown.addEventListener('click', () => {
-// 	dropdownOpen.classList.toggle('open');
-// });
+
+
+const mobileMenuOpen = document.querySelector('.js-mobile-menu-open');
+const mobileMenu = document.querySelector('.mobile-menu ');
+const mobileMenuClose = document.querySelector('.js-mobile-menu-close ');
+
+mobileMenuOpen.addEventListener('click', () => {
+    
+	mobileMenu.classList.add('open');
+});
+
+mobileMenuClose.addEventListener('click', () => {
+    
+	mobileMenu.classList.remove('open');
+});
 
 // const jsBigMinus = document.querySelector('.js-big-minus');
 // const jsBigNumber = document.querySelector('.js-big-number');

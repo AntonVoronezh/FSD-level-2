@@ -1,4 +1,74 @@
-.main {
-	flex-grow: 1;
-    display: flex;
+.mobile-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100vh;
+	// background-color: rgba(0, 0, 0, 0.5);
+	background-color: #fff;
+	z-index: 1000;
+	overflow-x: hidden;
+	overflow-y: hidden;
+    display: none;
+    margin: 0;
+    padding: 0;
+
+	&.open {
+		display: block;
+	}
+
+	&__close {
+		position: absolute;
+		right: 30px;
+		top: 30px;
+		width: 24px;
+		height: 24px;
+		font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+		font-weight: 900;
+		font-size: 24px;
+		display: block;
+		text-transform: uppercase;
+		background: $purple;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		transition: opacity 0.5s;
+
+		&::after {
+			content: 'X';
+		}
+
+		&:hover {
+			opacity: 0.5;
+			cursor: pointer;
+        }
+        
+	}
+
+	&__wrap {
+		width: 100%;
+		height: 100vh;
+		// padding: 50px;
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        
+	}
+
+	&__list {
+        margin-top: 50px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+        height: 100vh;
+        width: 100vw;
+	}
+
+	&__link {
+		font-family: 'Quicksand-Bold', sans-serif;
+		color: $dark-shade-100;
+		font-size: 34px;
+		line-height: 40px;
+	}
 }
