@@ -1,4 +1,6 @@
 .datepicker {
+	background: #ffffff;
+
 	&__wrap {
 		display: flex;
 		justify-content: space-between;
@@ -33,9 +35,14 @@
 	&__main-wrap {
 		display: flex;
 		flex-direction: column;
+		background-color: #fff;
+		position: relative;
 	}
 
 	&__main {
+		position: absolute;
+		z-index: 50;
+		background-color: #fff;
 		display: block;
 		width: 320px;
 		height: 369px;

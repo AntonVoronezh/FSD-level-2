@@ -108,3 +108,10 @@ jsReset.addEventListener('click', () => {
 	jsSmallNumber.innerHTML = 0;
 	jsBigNumber.innerHTML = 0;
 });
+
+
+const jsDropOk = document.querySelector('.js-ok-dropdown');
+
+jsDropOk.addEventListener('click', () => {
+	dropdownOpen.classList.toggle('open');
+});

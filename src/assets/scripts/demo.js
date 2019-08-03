@@ -18,91 +18,120 @@ import '../../views/common/datepicker/datepicker';
 
 console.log('demo.js loadedd');
 
-// const input = document.querySelector('.js-in');
+// const dropdown = document.querySelector('.js-dropdown');
+// const dropdownOpen = document.querySelector('.dropdown');
 
-// input.addEventListener('click', () => {
-// 	const main = document.querySelector('.datepicker__main');
-
-// 	main.classList.remove('close');
-
-// 	datePicker();
+// dropdown.addEventListener('click', () => {
+// 	dropdownOpen.classList.toggle('open');
 // });
 
-// const okDatepicker = document.querySelector('.js-ok-datepicker');
-// const resetDatepicker = document.querySelector('.js-reset-datepicker');
+// const jsBigMinus = document.querySelector('.js-big-minus');
+// const jsBigNumber = document.querySelector('.js-big-number');
+// const jsBigPlus = document.querySelector('.js-big-plus');
 
-// okDatepicker.addEventListener('click', () => {
-// 	const main = document.querySelector('.datepicker__main');
+// const reset = document.querySelector('.gray');
+// const jsReset = document.querySelector('.js-reset');
 
-// 	main.classList.add('close');
+// jsBigMinus.addEventListener('click', () => {
+// 	if (jsBigNumber.innerHTML > 0) {
+// 		jsBigNumber.innerHTML -= 1;
+// 	}
+
+// 	if (jsBigNumber.innerHTML === '0') {
+// 		jsBigMinus.classList.remove('dropdown__minus--active');
+// 	}
+
+// 	count();
 // });
 
-// resetDatepicker.addEventListener('click', () => {
-// 	const checkinDate = document.querySelector('#checkinDate');
-// 	const checkoutDate = document.querySelector('#checkoutDate');
-
-// 	checkinDate.innerHTML = '';
-// 	checkoutDate.innerHTML = '';
+// jsBigPlus.addEventListener('click', () => {
+// 	jsBigNumber.innerHTML = +jsBigNumber.innerHTML + 1;
+// 	jsBigMinus.classList.add('dropdown__minus--active');
+// 	count();
 // });
 
+// const jsSmallMinus = document.querySelector('.js-small-minus');
+// const jsSmallNumber = document.querySelector('.js-small-number');
+// const jsSmallPlus = document.querySelector('.js-small-plus');
 
- 
+// jsSmallMinus.addEventListener('click', () => {
+// 	if (jsSmallNumber.innerHTML > 0) {
+// 		jsSmallNumber.innerHTML -= 1;
+// 	}
 
-// function datePicker() {
-// 	$(document).ready(function() {
-// 		$('#Datepicker').datepicker({
-//             inline: true,
-// 			dateFormat: 'dd.mm.yy',
-// 			// todayHighlight: true,
-// 			minDate: 0,
-// 			maxDate: '+3M +0D',
-// 			beforeShowDay: dateRange,
-//             onSelect: DRonSelect,
-//             monthNames: ['Январь', 'Февраль', 'Март', 'Апрель',
-// 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь',
-// 'Октябрь', 'Ноябрь', 'Декабрь'],
-//  dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
-//  firstDay: 1,
-// 		});
-// 	});
-// }
+// 	if (jsSmallNumber.innerHTML === '0') {
+// 		jsSmallMinus.classList.remove('dropdown__minus--active');
+// 	}
 
-// function dateRange(date) {
-// 	var date1 = $.datepicker.parseDate('dd.mm.yy', $('#checkinDate').text());
-// 	var date2 = $.datepicker.parseDate('dd.mm.yy', $('#checkoutDate').text());
-// 	var isHighlight = date1 && (date.getTime() == date1.getTime() || (date2 && date >= date1 && date <= date2));
-// 	$(document).ready(function() {
-// 		// $("td.dp-highlight").text("Y");
-// 	});
-// 	return [true, isHighlight ? 'dp-highlight' : ''];
-// }
+// 	count();
+// });
 
-// function DRonSelect(dateText, inst) {
-// 	var date1 = $.datepicker.parseDate('dd.mm.yy', $('#checkinDate').text());
-// 	var date2 = $.datepicker.parseDate('dd.mm.yy', $('#checkoutDate').text());
+// jsSmallPlus.addEventListener('click', () => {
+// 	jsSmallNumber.innerHTML = +jsSmallNumber.innerHTML + 1;
+// 	jsSmallMinus.classList.add('dropdown__minus--active');
+// 	count();
+// });
 
-// 	if (!date1 || date2) {
-// 		$('#checkinDate').text(dateText);
-// 		$('#checkoutDate').text('');
-// 		$('#Datepicker').datepicker();
-// 		$('.date-from').remove();
-// 	} else {
-// 		if (
-// 			$.datepicker.parseDate('dd.mm.yy', $('#checkinDate').text()) >= $.datepicker.parseDate('dd.mm.yy', dateText)
-// 		) {
-// 			$('#checkinDate').text(dateText);
-// 			$('#checkoutDate').text('');
-// 			$('#Datepicker').datepicker();
-// 			$('.date-to').remove();
-// 		} else {
-// 			$('#checkoutDate').text(dateText);
-// 			$('#Datepicker').datepicker();
-// 			$('.date-to').remove();
+// const jsSmallerMinus = document.querySelector('.js-smaller-minus');
+// const jsSmallerNumber = document.querySelector('.js-smaller-number');
+// const jsSmallerPlus = document.querySelector('.js-smaller-plus');
+
+// jsSmallerMinus.addEventListener('click', () => {
+// 	if (jsSmallerNumber.innerHTML > 0) {
+// 		jsSmallerNumber.innerHTML -= 1;
+// 	}
+
+// 	if (jsSmallerNumber.innerHTML === '0') {
+// 		jsSmallerMinus.classList.remove('dropdown__minus--active');
+// 	}
+
+// 	count();
+// });
+
+// jsSmallerPlus.addEventListener('click', () => {
+// 	jsSmallerNumber.innerHTML = +jsSmallerNumber.innerHTML + 1;
+// 	jsSmallerMinus.classList.add('dropdown__minus--active');
+// 	count();
+// });
+
+// function count() {
+// 	let count = +jsSmallerNumber.innerHTML + +jsSmallNumber.innerHTML + +jsBigNumber.innerHTML;
+
+// 	if (count >= 0) {
+// 		reset.classList.add('open');
+
+// 		let text;
+// 		if (count === 1) {
+// 			text = ' гость';
 // 		}
 
-// 		// $('#Datepicker').datepicker('hide');
-// 		// $('#Datepicker').text('');
+// 		if (count > 1 && count < 5) {
+// 			text = ' гостя';
+// 		}
+// 		if (count > 4) {
+// 			text = ' гостей';
+// 		}
+// 		if (count === 0) {
+// 			text = ' Сколько гостей';
+// 			count = '';
+// 		}
+
+// 		dropdown.innerHTML = count + text;
+// 	} else {
+// 		reset.classList.reset('open');
 // 	}
 // }
 
+// jsReset.addEventListener('click', () => {
+// 	dropdown.innerHTML = ' Сколько гостей';
+// 	jsSmallerNumber.innerHTML = 0;
+// 	jsSmallNumber.innerHTML = 0;
+// 	jsBigNumber.innerHTML = 0;
+// });
 
+
+// const jsDropOk = document.querySelector('.js-ok-dropdown');
+
+// jsDropOk.addEventListener('click', () => {
+// 	dropdownOpen.classList.toggle('open');
+// });
