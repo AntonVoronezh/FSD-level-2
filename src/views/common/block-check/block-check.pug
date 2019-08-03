@@ -1,0 +1,63 @@
+.block-check
+  .block-check__wrap.block-check__wrap--header
+      .block-check__number
+        span.block-check__num
+          |№ 
+          span.block-check__more 888
+        span.block-check__lux
+          |люкс
+      .block-check__price
+        span.block-check__sum
+          b
+          | 9 990P
+        span.block-check__sut
+          | в сутки
+  .block-check__wrap.block-check__wrap--top
+    .block-check__wrap-tile
+      h3
+        | прибытие
+      h3
+        | выезд
+    include ../datepicker/datepicker.pug 
+  .block-check__wrap.block-check__wrap--center 
+    h3
+     | гости
+    include ../dropdown/dropdown.pug 
+  .block-check__wrap.block-check__wrap--center2  
+    .block-check__stroke
+      .block-check__stroke-left
+        | 9 990P х 4 суток
+      .block-check__stroke-right
+        | 39 960P
+    .block-check__stroke
+      .block-check__stroke-left
+        | Сбор за услуги: скидка 2 179P 
+        span.block-check__inf i
+      .block-check__stroke-right
+        | 0P
+    .block-check__stroke
+      .block-check__stroke-left
+        |  Сбор за дополнительные услуги
+        span.block-check__inf i
+      .block-check__stroke-right
+        | 300P
+
+  .block-check__wrap.block-check__wrap--bottom 
+    |Итого 
+    .block-check__border
+    |38 081P
+
+  .block-check__wrap.block-check__wrap--footer  
+    button.btn.btn__counter.btn__counter--purple.btn__counter--main.btn__counter--big
+      | забронировать
+  //- .block-enter__wrap.block-enter__wrap--top
+  //-   +inputText('Email', false)
+  //-   +inputText('Пароль', false)
+  //- .block-enter__wrap.block-enter__wrap--center
+  //-   button.btn.btn__counter.btn__counter--purple.btn__counter--main.btn__counter--big
+  //-     | войти
+  //- .block-enter__wrap.block-enter__wrap--footer
+  //-   span
+  //-     | Нет аккаунта на Toxin?
+  //-   button.btn.btn__counter.btn__counter--white.btn__counter--main.btn__counter--bra
+  //-     | сoздать
