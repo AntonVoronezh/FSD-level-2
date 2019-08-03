@@ -1,0 +1,27 @@
+.block-reg-acc
+  .block-reg-acc__title
+    |  Регистрация аккаунта
+  .block-reg-acc__wrap.block-reg-acc__wrap--top
+    +inputText('Имя', false)
+    +inputText('Фамилия', false)
+    include ../radio-block/radio-block.pug
+  .block-reg-acc__wrap.block-reg-acc__wrap--center
+    .block-reg-acc__label-title
+      h3
+        | дата рождения
+    +inputText('ДД.ММ.ГГГГ', true)
+  .block-reg-acc__wrap.block-reg-acc__wrap--bottom
+    .block-reg-acc__label-title
+      h3
+        | данные для входа в сервис
+    +inputText('Email', false)
+    +inputText('Пароль', false)
+    include ../toggle-block/toggle-block.pug
+  .block-reg-acc__wrap.block-reg-acc__wrap--btn
+    button.btn.btn__counter.btn__counter--purple.btn__counter--main.btn__counter--big
+      | перейти к оплате
+  .block-reg-acc__wrap.block-reg-acc__wrap--footer
+    span
+      | Уже есть аккаунт на Toxin
+    button.btn.btn__counter.btn__counter--white.btn__counter--main.btn__counter--bra
+      | войти

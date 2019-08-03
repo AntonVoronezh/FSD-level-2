@@ -1,0 +1,72 @@
+.block-reg-acc {
+	width: 380px;
+	height: 646px;
+	background: #ffffff;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	padding-top: 40px;
+	padding-left: 30px;
+	padding-right: 30px;
+
+	&__title {
+		font-family: 'Montserrat-Bold', sans-serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 30px;
+		color: #1f2041;
+	}
+
+	&__wrap {
+		// border: 1px solid #000000;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		&--top {
+			margin-top: 18px;
+			height: 130px;
+		}
+
+
+		&--center {
+			margin-top: 18px;
+			height: 70px;
+		}
+
+		&--bottom {
+			margin-top: 20px;
+			height: 150px;
+		}
+
+		&--btn {
+			margin-top: 20px;
+			// height: 60px;
+		}
+
+		&--footer {
+			margin-top: 28px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+
+	}
+
+	.btn__counter--bra {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	// &__label-title {
+	// 	display: flex;
+	// 	justify-content: space-between;
+	// 	width: 220px;
+	// 	margin-top: 20px;
+	// 	margin-bottom: 5px;
+	// }
+}
