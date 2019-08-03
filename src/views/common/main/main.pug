@@ -1,5 +1,6 @@
 include ../rate-block/rate-block.pug  
 include ../input-text/input-text.pug
+include ../block-room/block-room.pug
 
 main.main
   .main__wrap 
@@ -39,6 +40,8 @@ main.main
     include ../block-reg-acc/block-reg-acc.pug
     include ../block-enter/block-enter.pug
     include ../block-check/block-check.pug
+    //- include ../block-room/block-room.pug
+    +room('assets/images/rooms/1.png', 99, 'люкс', 1987, '1', 79)
 
     
 

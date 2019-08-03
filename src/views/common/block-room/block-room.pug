@@ -1,0 +1,29 @@
+include ../rate-block/rate-block.pug  
+
+mixin room(img, num, lux, price, rate, otz)
+  .block-room
+    .block-room__wrap.block-room__wrap--img
+      .block-room__circles
+        span.block-room__sp.block-room__sp--all
+        span.block-room__sp
+        span.block-room__sp
+        span.block-room__sp
+      .block-room__img 
+        img(src=img).block-room__pic
+    .block-room__wrap.block-room__wrap--center
+      .block-check__number
+        span.block-check__num
+          |№ 
+        span.block-check__more.block-room__sm=num 
+        span.block-check__lux=lux
+      .block-check__price
+        span.block-check__sum=price
+        span.block-check__sut
+          | в сутки
+    .block-room__wrap.block-room__wrap--bottom
+      .block-check__number
+        +rate(rate)
+      .block-check__price
+        span.block-check__sum=otz
+        span.block-check__sut
+          | Отзывов
