@@ -6,6 +6,10 @@
 	border-radius: 4px;
 	padding-left: 15px;
 	color: $dark-shade-75;
+
+	@include phones {
+		width: 90%;
+	}
 	
 	&::-webkit-input-placeholder {
 		color: $dark-shade-25;

@@ -5,6 +5,12 @@
 		display: flex;
 		justify-content: space-between;
 		width: 320px;
+
+		@include phones {
+			flex-direction: column;
+			width: 100%;
+		}
+		
 	}
 
 	&__label {

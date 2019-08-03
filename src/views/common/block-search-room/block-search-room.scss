@@ -12,6 +12,15 @@
 	padding-left: 30px;
 	padding-right: 30px;
 
+	@include phones {
+		// max-width: 50%;
+		width: 90%;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 10px;
+		height: 430px;
+	}
+
 	&__title {
 		font-family: 'Montserrat-Bold', sans-serif;
 		font-style: normal;
@@ -20,8 +29,10 @@
 		line-height: 30px;
 		color: #1f2041;
 
-		// margin-left: 30px;
-		// margin-right: 30px;
+		// @include phones {
+		// 	font-size: 16px;
+		// 	line-height: 18px;
+		// }
 	}
 
 	&__label-title {
@@ -30,5 +41,10 @@
 		width: 220px;
 		margin-top: 20px;
 		margin-bottom: 5px;
+
+		@include phones {
+			flex-direction: column;
+			width: 100%;
+		}
 	}
 }

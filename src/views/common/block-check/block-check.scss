@@ -10,6 +10,14 @@
 	padding-left: 30px;
 	padding-right: 30px;
 
+	@include phones {
+		width: 90%;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 10px;
+		height: 550px;
+	}
+
 	&__wrap {
 		display: flex;
 		flex-direction: column;

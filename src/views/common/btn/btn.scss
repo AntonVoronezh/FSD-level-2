@@ -53,6 +53,10 @@
 			width: 320px;
 			position: relative;
 
+			@include phones {
+				width: 90%;
+			}
+
 			&::after {
 				content: '\e5c8';
 				font-family: 'Material Icons';

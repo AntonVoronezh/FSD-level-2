@@ -5,6 +5,10 @@
 	background-color: #fff;
 	position: relative;
 
+	@include phones {
+		width: 90%;
+	}
+
 	&__title {
 		height: 44px;
 		font-size: 14px;
@@ -19,6 +23,10 @@
 		padding-left: 15px;
 		color: $dark-shade-75;
 		cursor: pointer;
+
+		@include phones {
+			// width: 90%;
+		}
 	}
 
 	&__list {
@@ -62,7 +70,10 @@
 		box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 		border-top-color: transparent;
 		transition: opacity 0.5s, height 0.5s;
+
+
 	}
+
 	&.open &__title {
 		border-bottom-left-radius: 0;
 		border-bottom-right-radius: 0;
