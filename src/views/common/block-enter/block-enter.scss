@@ -1,6 +1,6 @@
-.block-reg-acc {
+.block-enter {
 	width: 380px;
-	height: 646px;
+	height: 358px;
 	background: #ffffff;
 	border: 1px solid rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
@@ -27,46 +27,20 @@
 
 		&--top {
 			margin-top: 18px;
-			height: 130px;
+			height: 100px;
 		}
-
 
 		&--center {
 			margin-top: 18px;
-			height: 70px;
-		}
-
-		&--bottom {
-			margin-top: 20px;
-			height: 150px;
-		}
-
-		&--btn {
-			margin-top: 20px;
-			// height: 60px;
+			height: 50px;
 		}
 
 		&--footer {
-			margin-top: 28px;
+			margin-top: 18px;
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
 			align-items: center;
 		}
-
-
 	}
-
-	.btn__counter--bra {
-		padding-left: 25px;
-		padding-right: 25px;
-	}
-
-	// &__label-title {
-	// 	display: flex;
-	// 	justify-content: space-between;
-	// 	width: 220px;
-	// 	margin-top: 20px;
-	// 	margin-bottom: 5px;
-	// }
 }
