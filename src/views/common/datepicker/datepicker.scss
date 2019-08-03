@@ -30,6 +30,11 @@
 		}
 	}
 
+	&__main-wrap {
+		display: flex;
+		flex-direction: column;
+	}
+
 	&__main {
 		display: block;
 		width: 320px;
@@ -46,6 +51,18 @@
 	&__main.close {
 		display: none;
 	}
+
+	&__bottom {
+		margin-top: 20px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-right: 10px;
+	}
+}
+
+.db {
+	display: block;
 }
 
 .datepicker__main .ui-state-default {

@@ -27,6 +27,26 @@ input.addEventListener('click', () => {
 	datePicker();
 });
 
+const okDatepicker = document.querySelector('.js-ok-datepicker');
+const resetDatepicker = document.querySelector('.js-reset-datepicker');
+
+okDatepicker.addEventListener('click', () => {
+	const main = document.querySelector('.datepicker__main');
+
+	main.classList.add('close');
+});
+
+resetDatepicker.addEventListener('click', () => {
+	const checkinDate = document.querySelector('#checkinDate');
+	const checkoutDate = document.querySelector('#checkoutDate');
+
+	checkinDate.innerHTML = '';
+	checkoutDate.innerHTML = '';
+});
+
+
+ 
+
 function datePicker() {
 	$(document).ready(function() {
 		$('#Datepicker').datepicker({
@@ -83,3 +103,5 @@ function DRonSelect(dateText, inst) {
 		// $('#Datepicker').text('');
 	}
 }
+
+

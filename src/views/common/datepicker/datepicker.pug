@@ -8,6 +8,14 @@
             label.date-to
                 b ДД.ММ.ГГГГ:
             label#checkoutDate
-    .datepicker__main  
-         #Datepicker 
-   
+    .datepicker__main-wrap  
+        .datepicker__main.close  
+            #Datepicker 
+            .datepicker__bottom
+                .datepicker__bottom-left  
+                    button.btn.btn__without.gray.db.js-reset-datepicker
+                        |очистить
+                .datepicker__bottom-right  
+                    button.btn.btn__without.js-ok-datepicker
+                        |применить
+    
