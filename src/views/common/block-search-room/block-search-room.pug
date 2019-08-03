@@ -1,15 +1,15 @@
 .block-search-room
   .block-search-room__title
     | Найдём номера под ваши пожелания
-
-  //- input(value="ДД.ММ.ГГГГ").js-in#checkinDate
-  .block-search-room__label.js-in
-    label.date-from
-      b ДД.ММ.ГГГГ:
-    label#checkinDate
-  .block-search-room__label.js-in
-    label.date-to
-      b ДД.ММ.ГГГГ:
-    label#checkoutDate
-    
-  #Datepicker 
+  .block-search-room__label-title
+    h3
+     | прибытие
+    h3
+      | выезд
+  include ../datepicker/datepicker.pug
+  .block-search-room__label-title
+    h3
+     | гости
+  include ../dropdown/dropdown.pug
+  button.btn.btn__counter.btn__counter--purple.btn__counter--main.btn__counter--big
+    | подобрать номер
