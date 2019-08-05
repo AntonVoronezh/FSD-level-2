@@ -1,6 +1,7 @@
 body,
 html {
 	height: 100%;
+	overflow-y: scroll;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
 }
 
 .wrapper {
-	// overflow: hidden;
+	overflow: hidden;
 	min-height: 100%;
 	position: relative;
 	display: flex;

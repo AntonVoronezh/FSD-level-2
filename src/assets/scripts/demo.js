@@ -19,3 +19,24 @@ import '../../views/common/mobile-menu/mobile-menu';
 
 // console.log('demo.js loadedd');
 
+// const mobileMenuOpen = document.querySelector('.js-mobile-menu-open');
+
+
+// // const mobileMenuClose = document.querySelector('.js-mobile-menu-close ');
+// // console.log(mobileMenu);
+
+// if (mobileMenuOpen) {
+	
+// 	// const mobileMenu = document.querySelector('.mobile-menu ');
+
+// 	mobileMenuOpen.addEventListener('click', () => {
+// 		console.log('mobileMenuOpen');
+// 		// mobileMenu.classList.add('open');
+// 	});
+// }
+
+// // if (mobileMenuClose) {
+// // 	mobileMenuClose.addEventListener('click', () => {
+// // 		mobileMenu.classList.remove('open');
+// // 	});
+// // }

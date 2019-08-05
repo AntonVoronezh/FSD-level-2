@@ -1,5 +1,5 @@
-.main-signin {
-    position: relative;
+.main-registaration {
+	position: relative;
 
 	&__wrap {
 		position: absolute;
@@ -11,29 +11,25 @@
 
 	&__block {
 		position: absolute;
-		top: 50%;
+		top: 52%;
 		left: 50%;
 		z-index: 10;
 		transform: translate(-50%, -50%);
-
 	}
 
-
-    
-    &__bcg {
-		
+	&__bcg {
 		@include tablets {
-			height: 440px;
+			height: 840px;
 		}
 
 		position: relative;
 		height: 680px;
 		overflow: hidden;
 		// border: 5px solid #000000;
-	}	
-	
+	}
+
 	&__img {
 		position: absolute;
 		top: -70px;
-    }
+	}
 }
