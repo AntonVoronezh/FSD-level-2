@@ -1,0 +1,40 @@
+.main-registaration {
+	position: relative;
+
+	&__wrap {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+	}
+
+	&__block {
+		position: absolute;
+		top: 30%;
+		left: 23%;
+		z-index: 10;
+
+		@include tablets {
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	&__bcg {
+		@include tablets {
+			height: 540px;
+		}
+
+		position: relative;
+		height: 840px;
+		// overflow: hidden;
+		// border: 1px solid #000000;
+	}
+
+	&__img {
+		position: absolute;
+		top: -70px;
+	}
+}
