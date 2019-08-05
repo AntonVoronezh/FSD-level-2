@@ -1,0 +1,30 @@
+nav.top-nav
+  .top-nav__wrap 
+   
+    - var titles = ['О нас','Услуги','Вакансии','Новости','Соглашения'];
+        ul.top-nav__list
+          each title, i in titles
+            li.top-nav__item
+              if i===0
+                a(href=`${title}`).top-nav__link.top-nav__link--active #{title}
+              else if i===1
+                .top-nav__select
+                  select.top-nav__dropdown
+                    option.top-nav__option #{title} 
+                    option #{title}
+                    option #{title}
+              else if i===4
+                .top-nav__select
+                  select.top-nav__dropdown
+                    option.top-nav__option #{title} 
+                    option #{title}
+                    option #{title}
+              else 
+                  a(href=`${title.toLowerCase().replace(" ", "-")}.html`).top-nav__link #{title}
+          li.top-nav__item
+            button.btn.btn__counter.btn__counter--white.btn__counter--nav
+              |Login
+          li.top-nav__item
+            button.btn.btn__counter.btn__counter--purple.btn__counter--nav
+              |Register
+

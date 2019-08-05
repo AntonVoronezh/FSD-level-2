@@ -1,7 +1,6 @@
 const dropdownСount = document.querySelector('.js-dropdown-count');
 const dropdownСountOpen = document.querySelector('.dropdown-count');
 
-console.log('ss88888888888s')
 dropdownСount.addEventListener('click', () => {
 	
 	dropdownСountOpen.classList.toggle('open');
