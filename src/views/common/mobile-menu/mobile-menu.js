@@ -7,7 +7,12 @@ mobileMenuOpen.addEventListener('click', () => {
 	mobileMenu.classList.add('open');
 });
 
-mobileMenuClose.addEventListener('click', () => {
+
+if(mobileMenuClose) {
+	mobileMenuClose.addEventListener('click', () => {
     
 	mobileMenu.classList.remove('open');
 });
+}
+
+

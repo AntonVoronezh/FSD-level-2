@@ -1,0 +1,32 @@
+.footer-nav
+  .container
+    nav.footer-nav__wrap 
+      .footer-nav__block.footer-nav__block--margin
+        include ../logo/logo.pug
+        p.footer-nav__text Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+      .footer-nav__block-wrap
+        .footer-nav__block
+          h3.footer-nav__title навигация
+          - var titlesNavigation = ['О нас','Новости','Служба поддержки','Услуги'];
+              ul.footer-nav__list
+                each title, i in titlesNavigation
+                  li.footer-nav__item
+                    a(href=`${title}`).footer-nav__link #{title}
+        .footer-nav__block
+          h3.footer-nav__title о нас
+          - var titlesAbout = ['О сервисе','Наша команда','Вакансии','Инвесторы'];
+            ul.footer-nav__list
+              each title, i in titlesAbout
+                li.footer-nav__item
+                  a(href=`${title}`).footer-nav__link #{title}
+        .footer-nav__block
+          h3.footer-nav__title Служба поддержки
+          - var titlesAbout = ['Соглашения','Сообщества ','Связь с нами'];
+            ul.footer-nav__list
+              each title, i in titlesAbout
+                li.footer-nav__item
+                  a(href=`${title}`).footer-nav__link #{title}
+      .footer-nav__block
+        h3 Подписка
+        p.footer-nav__text Получайте специальные предложения и новости сервиса
+        include ../search/search.pug
