@@ -1,8 +1,19 @@
-main.main-search-room ooooooooooo
+include ../block-room/block-room.pug
 
-  //- .main-signin__bcg 
-  //-   img(src='assets/images/bcg/1.png').main-signin__img
-  //- .main-signin__block
-  //-   include ../block-enter/block-enter.pug
-    
-
+main.main-search-room 
+  .main-search-room__title Номера, которые мы для вас подобрали
+  .main-search-room__content
+    +room('assets/images/rooms/1.png', 99, 'люкс', 1987, '1', 79)
+    +room('assets/images/rooms/1.png', 99, 'люкс', 1987, '1', 79)
+    +room('assets/images/rooms/1.png', 99, 'люкс', 1987, '1', 79)
+    +room('assets/images/rooms/1.png', 99, 'люкс', 1987, '1', 79)
+    +room('assets/images/rooms/1.png', 99, 'люкс', 1987, '1', 79)
+    +room('assets/images/rooms/1.png', 99, 'люкс', 1987, '1', 79)
+    +room('assets/images/rooms/1.png', 99, 'люкс', 1987, '1', 79)
+    +room('assets/images/rooms/1.png', 99, 'люкс', 1987, '1', 79)
+    +room('assets/images/rooms/1.png', 99, 'люкс', 1987, '1', 79)
+    +room('assets/images/rooms/1.png', 99, 'люкс', 1987, '1', 79)
+    +room('assets/images/rooms/1.png', 99, 'люкс', 1987, '1', 79)
+    +room('assets/images/rooms/1.png', 99, 'люкс', 1987, '1', 79)
+  .main-search-room__wrap  
+    include ../pagination/pagination.pug

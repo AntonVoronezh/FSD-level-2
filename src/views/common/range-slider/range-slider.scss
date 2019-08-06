@@ -25,6 +25,14 @@
 		color: $dark-shade-50;
 		font-size: 12px;
 	}
+
+	&__info {
+		color: $dark-shade-50;
+		font-size: 12px;
+		line-height: 14px;
+		margin-top: 15px;
+		margin-bottom: 10px;
+	}
 }
 
 .range-slider {

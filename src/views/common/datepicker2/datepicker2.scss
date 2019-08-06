@@ -1,20 +1,18 @@
-.datepicker {
-	background: #ffffff;
+.datepicker2 {
 
 	&__wrap {
 		display: flex;
 		justify-content: space-between;
-		width: 320px;
+		width: 266px;
 
 		@include phones {
 			flex-direction: column;
 			width: 100%;
 		}
-		
 	}
 
 	&__label {
-		width: 150px;
+		width: 266px;
 		height: 44px;
 		background: #ffffff;
 		border: 1px solid rgba(31, 32, 65, 0.25);
@@ -50,8 +48,8 @@
 		z-index: 50;
 		background-color: #fff;
 		display: block;
-		width: 320px;
-		height: 369px;
+		width: 266px;
+		height: 330px;
 		background: #ffffff;
 		border: 1px solid rgba(31, 32, 65, 0.25);
 		box-sizing: border-box;
@@ -78,7 +76,7 @@
 	display: block;
 }
 
-.datepicker__main .ui-state-default {
+.datepicker2__main .ui-state-default {
 	border: 0 !important;
 	background: #fff !important;
 }
@@ -107,16 +105,16 @@
 	float: none;
 }
 
-.datepicker__main .ui-datepicker-today {
+.datepicker2__main .ui-datepicker-today {
 	background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%) !important;
 	border-radius: 22px;
 	color: #fff !important;
 	font-weight: bold !important;
 }
 
-.datepicker__main .ui-datepicker {
-	width: 280px;
-	height: 290px;
+.datepicker2__main .ui-datepicker {
+	width: 240px;
+	height: 270px;
 	border: none !important;
 }
 
@@ -126,7 +124,7 @@
 	border-radius: 0;
 }
 
-.datepicker__main .ui-datepicker-header {
+.datepicker2__main .ui-datepicker-header {
 	background-color: #fff !important;
 	border-width: 1px;
 	border-color: #fff;
@@ -134,7 +132,7 @@
 	margin-bottom: 25px;
 }
 
-.datepicker__main .ui-datepicker-title {
+.datepicker2__main .ui-datepicker-title {
 	line-height: 24px !important;
 }
 
@@ -146,7 +144,7 @@
 	cursor: pointer;
 }
 
-.datepicker__main .ui-datepicker-month {
+.datepicker2__main .ui-datepicker-month {
 	font-family: 'Quicksand-Bold', sans-serif !important;
 	font-style: normal;
 	font-weight: bold !important;
@@ -155,7 +153,7 @@
 	color: #1f2041 !important;
 }
 
-.datepicker__main .ui-datepicker-year {
+.datepicker2__main .ui-datepicker-year {
 	font-family: 'Quicksand-Bold', sans-serif !important;
 	font-style: normal;
 	font-weight: bold !important;
@@ -164,7 +162,7 @@
 	color: #1f2041 !important;
 }
 
-.datepicker__main .ui-state-default {
+.datepicker2__main .ui-state-default {
 	text-align: center;
 	font-family: 'Montserrat-Regular';
 	font-style: normal !important;
@@ -174,21 +172,21 @@
 	color: rgba(31, 32, 65, 0.5) !important;
 }
 
-.datepicker__main .ui-datepicker td {
+.datepicker2__main .ui-datepicker td {
 	margin: 0 !important;
 	padding: 0 !important;
 }
 
-.datepicker__main .ui-state-default {
+.datepicker2__main .ui-state-default {
 	background-color: transparent !important;
-	width: 40px !important;
-	height: 40px !important;
+	width: 30px !important;
+	height: 30px !important;
 	margin: 0 !important;
 	padding: 0 !important;
 	padding-top: 10px !important;
 }
 
-.datepicker__main .ui-datepicker-calendar thead tr th {
+.datepicker2__main .ui-datepicker-calendar thead tr th {
 	text-align: center;
 	font-family: 'Montserrat-Regular';
 	font-style: normal !important;
@@ -198,11 +196,11 @@
 	color: #bc9cff !important;
 }
 
-.datepicker__main .ui-datepicker thead {
+.datepicker2__main .ui-datepicker thead {
 	background: none;
 }
 
-.datepicker__main td .ui-state-active {
+.datepicker2__main td .ui-state-active {
 	background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%) !important;
 	border-radius: 22px;
 	opacity: 1 !important;
@@ -245,4 +243,10 @@
 
 .ui-datepicker-next:before {
 	content: '\e5c8';
+}
+
+#checkoutDate {
+	&::before {
+		content: ' - ';
+	}
 }

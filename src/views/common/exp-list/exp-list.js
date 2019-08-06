@@ -1,5 +1,7 @@
 const expList = document.querySelector('.exp-list');
 
-expList.addEventListener('click', () => {
-	expList.classList.toggle('open');
-});
+if (expList) {
+	expList.addEventListener('click', () => {
+		expList.classList.toggle('open');
+	});
+}

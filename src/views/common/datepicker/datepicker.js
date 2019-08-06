@@ -4,7 +4,7 @@ if (input) {
 	input.addEventListener('click', () => {
 		const main = document.querySelector('.datepicker__main');
 
-		main.classList.remove('close');
+		main.classList.toggle('close');
 
 		datePicker();
 	});
