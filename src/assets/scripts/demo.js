@@ -11,7 +11,7 @@
 // import '../../views/common/pagination/pagination';
 import '../../views/common/range-slider/range-slider';
 // import '../../views/common/checkbox/checkbox';
-// import '../../views/common/exp-list/exp-list';
+import '../../views/common/exp-list/exp-list';
 import '../../views/common/dropdown/dropdown';
 // import '../../views/common/dropdown-count/dropdown-count';
 import '../../views/common/datepicker/datepicker';

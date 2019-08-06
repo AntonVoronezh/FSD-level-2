@@ -1,0 +1,248 @@
+.datepicker {
+	background: #ffffff;
+
+	&__wrap {
+		display: flex;
+		justify-content: space-between;
+		width: 320px;
+
+		@include phones {
+			flex-direction: column;
+			width: 100%;
+		}
+		
+	}
+
+	&__label {
+		width: 150px;
+		height: 44px;
+		background: #ffffff;
+		border: 1px solid rgba(31, 32, 65, 0.25);
+		box-sizing: border-box;
+		border-radius: 4px;
+		color: rgba(31, 32, 65, 0.75);
+		display: flex;
+		align-items: center;
+		text-align: center;
+		position: relative;
+		padding-left: 10px;
+
+		&::after {
+			content: '\e5cf';
+			font-family: 'Material Icons';
+			font-size: 24px;
+			color: $dark-shade-50;
+			line-height: 24px;
+			position: absolute;
+			right: 0;
+		}
+	}
+
+	&__main-wrap {
+		display: flex;
+		flex-direction: column;
+		background-color: #fff;
+		position: relative;
+	}
+
+	&__main {
+		position: absolute;
+		z-index: 50;
+		background-color: #fff;
+		display: block;
+		width: 320px;
+		height: 369px;
+		background: #ffffff;
+		border: 1px solid rgba(31, 32, 65, 0.25);
+		box-sizing: border-box;
+		box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+		border-radius: 4px;
+		padding-left: 20px;
+		padding-top: 14px;
+	}
+
+	&__main.close {
+		display: none;
+	}
+
+	&__bottom {
+		margin-top: 20px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-right: 10px;
+	}
+}
+
+.db {
+	display: block;
+}
+
+.datepicker__main .ui-state-default {
+	border: 0 !important;
+	background: #fff !important;
+}
+
+.dp-highlight .ui-state-default {
+	color: rgba(31, 32, 65, 0.25) !important;
+	position: relative;
+	z-index: 1;
+}
+.dp-highlight .ui-state-default::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.25;
+	z-index: -1;
+	background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%) !important;
+}
+
+.ui-datepicker.ui-datepicker-multi {
+	width: 100% !important;
+}
+.ui-datepicker-multi .ui-datepicker-group {
+	float: none;
+}
+
+.datepicker__main .ui-datepicker-today {
+	background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%) !important;
+	border-radius: 22px;
+	color: #fff !important;
+	font-weight: bold !important;
+}
+
+.datepicker__main .ui-datepicker {
+	width: 280px;
+	height: 290px;
+	border: none !important;
+}
+
+.ui-datepicker-header {
+	background-color: #fff !important;
+	background-image: none !important;
+	border-radius: 0;
+}
+
+.datepicker__main .ui-datepicker-header {
+	background-color: #fff !important;
+	border-width: 1px;
+	border-color: #fff;
+	border-style: solid;
+	margin-bottom: 25px;
+}
+
+.datepicker__main .ui-datepicker-title {
+	line-height: 24px !important;
+}
+
+.ui-datepicker-next {
+	cursor: pointer;
+}
+
+.ui-datepicker-prev {
+	cursor: pointer;
+}
+
+.datepicker__main .ui-datepicker-month {
+	font-family: 'Quicksand-Bold', sans-serif !important;
+	font-style: normal;
+	font-weight: bold !important;
+	font-size: 19px !important;
+	line-height: 24px !important;
+	color: #1f2041 !important;
+}
+
+.datepicker__main .ui-datepicker-year {
+	font-family: 'Quicksand-Bold', sans-serif !important;
+	font-style: normal;
+	font-weight: bold !important;
+	font-size: 19px !important;
+	line-height: 24px !important;
+	color: #1f2041 !important;
+}
+
+.datepicker__main .ui-state-default {
+	text-align: center;
+	font-family: 'Montserrat-Regular';
+	font-style: normal !important;
+	font-weight: bold !important;
+	font-size: 12px !important;
+	line-height: 15px !important;
+	color: rgba(31, 32, 65, 0.5) !important;
+}
+
+.datepicker__main .ui-datepicker td {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.datepicker__main .ui-state-default {
+	background-color: transparent !important;
+	width: 40px !important;
+	height: 40px !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	padding-top: 10px !important;
+}
+
+.datepicker__main .ui-datepicker-calendar thead tr th {
+	text-align: center;
+	font-family: 'Montserrat-Regular';
+	font-style: normal !important;
+	font-weight: bold !important;
+	font-size: 12px !important;
+	line-height: 15px !important;
+	color: #bc9cff !important;
+}
+
+.datepicker__main .ui-datepicker thead {
+	background: none;
+}
+
+.datepicker__main td .ui-state-active {
+	background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%) !important;
+	border-radius: 22px;
+	opacity: 1 !important;
+	color: #fff !important;
+	font-weight: bold !important;
+}
+
+.ui-datepicker-prev,
+.ui-datepicker-next {
+	position: relative;
+	background: #fff !important;
+	border: 0 !important;
+}
+
+.ui-datepicker-prev span,
+.ui-datepicker-next span {
+	background-image: none !important;
+}
+
+.ui-datepicker-prev:before,
+.ui-datepicker-next:before {
+	font-family: 'Material Icons';
+	color: #bc9cff;
+	font-size: 24px;
+	line-height: 20px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	font-weight: normal;
+	align-items: center;
+	justify-content: center;
+}
+
+.ui-datepicker-prev:before {
+	content: '\e5c4';
+}
+
+.ui-datepicker-next:before {
+	content: '\e5c8';
+}

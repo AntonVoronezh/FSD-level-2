@@ -1,0 +1,39 @@
+.main-signin {
+    position: relative;
+
+	&__wrap {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+	}
+
+	&__block {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		z-index: 10;
+		transform: translate(-50%, -50%);
+
+	}
+
+
+    
+    &__bcg {
+		
+		@include tablets {
+			height: 440px;
+		}
+
+		position: relative;
+		height: 680px;
+		overflow: hidden;
+		// border: 5px solid #000000;
+	}	
+	
+	&__img {
+		position: absolute;
+		top: -70px;
+    }
+}
