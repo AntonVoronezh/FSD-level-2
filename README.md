@@ -1,2 +1,2 @@
-# educaton-HTML-CSS-17-mountains
-practical HTML5 &amp; CSS3 &amp; JS from LoftSchool.com
+# Обучающее задание на фронтенд разработчика #fsd #fsd_team
+Задание 2. Практика верстки. 2-4 месяца
