@@ -1,0 +1,58 @@
+main.main-room-details
+  .main-room-details__top 
+    .main-room-details__top-left  
+      img(src='assets/images/bcg/5.png').main-room-details__img
+    .main-room-details__top-right  
+      img(src='assets/images/bcg/3.png').main-room-details__img
+      img(src='assets/images/bcg/4.png').main-room-details__img
+  .container    
+    .main-room-details__bottom
+     
+      .main-room-details__bottom-left
+        .main-room-details__wrap
+          .main-room-details__wrap-top
+            .main-room-details__wrap-top-left
+              include ../plus/plus.pug
+            .main-room-details__wrap-top-right
+              .main-room-details__wrap-top-right-title
+                | Впечатления от номера
+              .main-room-details__wrap-top-right-wrap
+                .main-room-details__circle
+                  .magic
+                  .magic2
+                  .main-room-details__circle-text
+                    .main-room-details__circle-text-top
+                      |260
+                    .main-room-details__circle-text-bottom
+                      |голосов
+                ul.main-room-details__circle-list
+                  li.main-room-details__circle-list-item.main-room-details__circle-list-item--1
+                    |Великолепно 
+                  li.main-room-details__circle-list-item.main-room-details__circle-list-item--2
+                    |Хорошо
+                  li.main-room-details__circle-list-item.main-room-details__circle-list-item--3
+                    |Удовлетворительно
+                  li.main-room-details__circle-list-item.main-room-details__circle-list-item--4
+                    |Разочарован
+          .main-room-details__wrap-center
+            include ../review/review.pug
+          .main-room-details__wrap-bottom
+            .main-room-details__wrap-bottom-left
+              .main-room-details__wrap-bottom-left-title
+                | Правила
+              ul.main-room-details__rules-lest
+                li.main-room-details__rules-item
+                  |Нельзя с питомцами
+                li.main-room-details__rules-item
+                  |Без вечеринок и мероприятий
+                li.main-room-details__rules-item
+                  |Время прибытия — после 13:00, а выезд до 12:00
+            .main-room-details__wrap-bottom-right
+              .main-room-details__wrap-bottom-right-title
+                |Отмена
+              p.main-room-details__wrap-bottom-text
+                |Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+      .main-room-details__bottom-right
+        include ../block-check/block-check.pug
+    
+

@@ -1,46 +1,61 @@
 .review {
+	// width: 100%;
+	padding-right: 60px;
+
 	&__title {
 		display: flex;
 		justify-content: space-between;
+
+		&-left {
+			font-family: 'Quicksand-Bold', sans-serif;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 19px;
+			line-height: 24px;
+			margin-bottom: 20px;
+		}
 	}
 
+	&__img {
+		height: 48px;
+		width: 48px;
+		border: 2px solid #ffffff;
+		box-sizing: border-box;
+		box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.1);
+		border-radius: 32px;
+
+		&--1 {
+			background: url('assets/images/review/1.png') 55% 20%;
+		}
+		&--2 {
+			background: url('assets/images/review/2.png') 55% 20%;
+		}
+	}
+
+	&__top {
+		display: flex;
+	}
+
+	&__right {
+		margin-left: 10px;
+	}
+
+	&__name {
+		font-family: 'Montserrat-Bold';
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 24px;
+		color: rgba(31, 32, 65, 0.75);
+	}
+
+	&__bottom {
+		margin-top: 10px;
+		display: flex;
+	}
 	&__item {
 		display: flex;
 		flex-direction: column;
-
-		&__img {
-			height: 48px;
-			width: 48px;
-			border: 2px solid #ffffff;
-			box-sizing: border-box;
-			box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.1);
-			border-radius: 32px;
-
-			&--1 {
-				background: url('assets/images/review/image.png') 55% 20%;
-			}
-		}
-
-		&__top {
-			display: flex;
-		}
-
-		&__right {
-			margin-left: 10px;
-		}
-
-		&__name {
-			font-family: 'Montserrat-Bold';
-			font-style: normal;
-			font-weight: bold;
-			font-size: 14px;
-			line-height: 24px;
-			color: rgba(31, 32, 65, 0.75);
-		}
-
-		&__bottom {
-			margin-top: 10px;
-			display: flex;
-		}
+		margin-bottom: 20px;
 	}
 }
